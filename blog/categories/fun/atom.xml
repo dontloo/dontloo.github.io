@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: fun | My Octopress Blog]]></title>
+  <title><![CDATA[Category: fun | Cheap Pride]]></title>
   <link href="http://wang-xiaoming.github.io/blog/categories/fun/atom.xml" rel="self"/>
   <link href="http://wang-xiaoming.github.io/"/>
-  <updated>2013-05-23T13:26:02+08:00</updated>
+  <updated>2013-05-23T14:01:42+08:00</updated>
   <id>http://wang-xiaoming.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Wang Xiaoming]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
