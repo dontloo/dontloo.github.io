@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://wang-xiaoming.github.io/sitemap.xml 
