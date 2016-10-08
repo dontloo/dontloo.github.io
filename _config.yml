@@ -5,7 +5,7 @@ locale: en_US
 description: # Describe your website here.
 logo: # so-simple-sample-image-4.jpg
 search: true
-url: http://dontloo.github.io/
+url: http://dontloo.github.io
 # Jekyll configuration
 
 permalink:   /:categories/:title/
