@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "About Search"
+title: "Two Types of Search Algorithms"
 modified:
 categories: blog
 excerpt:
