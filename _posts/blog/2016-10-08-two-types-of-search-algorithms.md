@@ -17,7 +17,9 @@ Perhaps the simplest applications of the two are [`tree maps`](https://docs.orac
 The performance of hash based search relies largely on the choice of hash functions, which are often to be desinged carefully for different cases. Why not always using tree based search then? The limitation of tree based search is it requires the elements to be **comparable**, which means a valid [metric](https://en.wikipedia.org/wiki/Metric_(mathematics)) needs to be defined across the elements.
 
 ##Approximate Nearest Neighbors
-
+Serch \\( k \\) nearest
+serch within radius
+priority queue.
 ```ruby
 def print_hi(name)
   puts "Hi, #{name}"
