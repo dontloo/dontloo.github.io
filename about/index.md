@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About This Blog
 modified: 2014-10-08
 ---
 
