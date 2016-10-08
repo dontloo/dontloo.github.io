@@ -3,7 +3,7 @@
 title: Dontloo's Blog
 locale: en_US
 description: # Describe your website here.
-logo: so-simple-sample-image-4.jpg
+logo: # so-simple-sample-image-4.jpg
 search: true
 url: http://dontloo.github.io/
 # Jekyll configuration
@@ -35,7 +35,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: dontloo
+  name: Dontloo
   avatar: site-logo.png
   email: # dontloo@hotmail.com
   disqus-shortname:
