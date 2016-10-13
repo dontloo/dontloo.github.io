@@ -9,16 +9,16 @@ date: 2016-10-13
 modified: 2016-10-13
 ---
 
-#Intro
+###Intro
 The title is exaggerated, actually by "99%+ accuracy face recognition" I mean "99+% accuracy on the LFW (Labeled Faces in the Wild) dataset". 
 This recipe contains every big idea you need to know to reproduce the results, and it depends on public data sets only.
 
-#Preliminaries
+###Preliminaries
 We'll use two publicly avaiable data sets for training [CASIA WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) 
 and [MS-Celeb-1M](https://www.microsoft.com/en-us/research/project/ms-celeb-1m-challenge-recognizing-one-million-celebrities-real-world/). 
 We'll need a face detector, a face aligner and a deep learning library, there are many open source projects of those online.
 
-#Method
+###Method
 CASIA WebFace contains 500k images of 10k people, the data set is relatively clean. 
 With CASIA WebFace data only we can train a network that has about 97%+ accuracy on LFW, as reported in their paper. 
 Actually if add some recent techniques (batch normalization, the residual architecture, image augmentation, ADAM) to their network, the performance can be raised up to 98%+.
@@ -35,7 +35,7 @@ With the 98%+ network trained on CASIA WebFace we can do something to clean the 
 Following same network architecture, we can get a 98.5%+ network with the 3m images. 
 Combining the results of the networks trained on the two data sets will give 99%+ accuracy on LFW.  
 
-#Notes
+###Notes
 * Use both aligned and unaligned images for training.
 * Test time augmentation: original + flipped.
 * I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a higher weight (1.3) when combining models.
