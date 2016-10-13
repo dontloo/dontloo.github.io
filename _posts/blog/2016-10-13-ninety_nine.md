@@ -39,7 +39,7 @@ Combining the results of the networks trained on the two data sets will give 99%
 ### Notes
 - Use both aligned and unaligned images for training.
 - Test time augmentation: original + flipped.
-- I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a higher weight (1.3) when combining models.
+- I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a slightly higher weight when combining models.
 - I didn't merge the two training sets into one becuase there are many overlaps.
 - The actual process may not be so easy as it sounds in this blog.
 
