@@ -26,20 +26,20 @@ Actually if add some recent techniques (batch normalization, the residual archit
 MS-Celeb-1M contains of 10m images of 100k people, which is rather noisy that I believe is not suitable for training directly. 
 But there's a trait of the data set that we can take advantage of, which is, a proportion of these 100k people are rather clean, only we don't know exactly who they are.
 
-With the 98%+ network trained on CASIA WebFace we can do something to clean the MS-Celeb-1M data set. 
+With the 98%+ network trained on CASIA WebFace we can do something to clean the MS-Celeb-1M data set.  
 
-* Extracted the features of all the images using the network. 
-* Choose a measure to estimate the discrepancy of the images under the same person based on the features (e.g. the trace of the covariance matrix). 
-* Sort the 100k people people by this measure, and the first quarter (or 30k) of the list should be relatively clean.
-* Keep the (about 3m) images of these 30k people for training and discard the rest.
+- Extracted the features of all the images using the network. 
+- Choose a measure to estimate the discrepancy of the images under the same person based on the features (e.g. the trace of the covariance matrix). 
+- Sort the 100k people people by this measure, and the first quarter (or 30k) of the list should be relatively clean.
+- Keep the (about 3m) images of these 30k people for training and discard the rest.
 
 Following same network architecture, we can get a 98.5%+ network with the 3m images. 
 Combining the results of the networks trained on the two data sets will give 99%+ accuracy on LFW.  
 
 ### Notes
-* Use both aligned and unaligned images for training.
-* Test time augmentation: original + flipped.
-* I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a higher weight (1.3) when combining models.
-* The actual process may not be so easy as it sounds in this blog.
+- Use both aligned and unaligned images for training.
+- Test time augmentation: original + flipped.
+- I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a higher weight (1.3) when combining models.
+- The actual process may not be so easy as it sounds in this blog.
 
 
