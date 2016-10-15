@@ -3,7 +3,7 @@ layout: page
 modified: 2014-10-08
 ---
 ### About Me
-I'm interested in artificial intelligence / machine learning related stuff, I have a master degree specialized in AI, I visit StackExchange (especially the [stats site](http://stats.stackexchange.com/users/95569/dontloo)) often, and above all I am a programmer :))
+I'm interested in artificial intelligence / machine learning related stuff, I have a master degree specialized in AI, I'm on StackExchange (especially the [stats site](http://stats.stackexchange.com/users/95569/dontloo)) often, and above all I am a programmer :))
 
 **My programming tech stack** (ones that I'm still familiar with are marked in bold)  
 
