@@ -10,7 +10,7 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 - *Languages:* **Java**, **Python**, **Matlab**, **C/C++**, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
 - *Machine Learning Libs:* **Theano**, **Caffe**, **Scikit-learn**, SVM-Light.
 - *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP.
-- *Java Libs / Tools:* Ant, Maven, JUnit, JSP, Spring, Struts, Hibernate, MyBatis, J2ME, Lucene.
+- *Java Libs / Tools:* Ant, Maven, JUnit, JSP, Spring, Hibernate, MyBatis, J2ME, Lucene.
 - *Python Libs / Tools:*  **Numpy**, **Scipy**, Pandas, Matplotlib, Django.
 - *C/C++ Libs / Tools:* **CMake**, Qt, libpcap / WinPcap, GNU bison / Lex & Yacc.
 - *Others:* Rails, JQuery, Bootstrap, Matlab MEX.
