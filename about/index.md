@@ -12,7 +12,7 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 - *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP.
 - *Java Libs / Tools:* Ant, Maven, JUnit, JSP, Spring, Hibernate, MyBatis, J2ME, Lucene.
 - *Python Libs / Tools:*  **Numpy**, **Scipy**, Pandas, Matplotlib, Django.
-- *C/C++ Libs / Tools:* **CMake**, Qt, libpcap / WinPcap, GNU bison / Lex & Yacc.
+- *C/C++ Libs / Tools:* **CMake**, Qt, libpcap / WinPcap, Flex and Bison / Lex & Yacc.
 - *Other Libs / Tools::* Rails, JQuery, Bootstrap, Matlab MEX.
 - Lambda calculus
 
