@@ -7,7 +7,7 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 
 **My programming tech stack** (ones that I'm still familiar with are marked in bold)  
 
-- *Languages:* **Java**, **Python**, **Matlab**, **C/C++**, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
+- **Java**, **Python**, **Matlab**, **C/C++**, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
 - *Machine Learning Libs:* **Theano**, **Caffe**, **Scikit-learn**, SVM-Light.
 - *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP.
 - *Java Libs / Tools:* Ant, Maven, JUnit, JSP, Spring, Hibernate, MyBatis, J2ME, Lucene.
