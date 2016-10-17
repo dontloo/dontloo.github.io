@@ -21,7 +21,7 @@ We'll need a face detector, a face aligner and a deep learning library, there ar
 ### Method
 CASIA WebFace contains 500k images of 10k people, the data set is relatively clean. 
 With CASIA WebFace data only we can train a network that has about 97%+ accuracy on LFW, as reported in their paper. 
-Actually if add some recent techniques (batch normalization, the residual architecture, image augmentation, ADAM) to their network, the performance can be raised up to 98%+.
+Actually if add some later techniques (batch normalization, the residual architecture, image augmentation, ADAM) to their network, the performance can be raised up to 98%+.
 
 MS-Celeb-1M contains of 10m images of 100k people, which is rather noisy that I believe is not suitable for training directly. 
 But there's a trait of the data set that we can take advantage of, which is, a proportion of these 100k people are rather clean, only we don't know exactly who they are.
