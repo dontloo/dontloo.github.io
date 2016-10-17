@@ -12,9 +12,9 @@ modified: 2016-10-08
 ### Basics
 
 There're two types of search algorithms, tree based and hash based.
-Perhaps the simplest applications of the two are [`tree maps`](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) and [`hash maps`](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html).
+Perhaps their simplest applications are [`tree maps`](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) and [`hash maps`](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html).
 
-The performance of hash based search relies largely on the choice of hash functions, which are often to be designed carefully for different cases. Why not always using tree based search then? The limitation of tree based search is it requires the elements to be **comparable**.
+The performance of hash based search relies largely on the choice of hash functions, which are often to be designed carefully for different cases. Why not always use tree based search then? The limitation of tree based search is it requires the elements to be **comparable**.
 
 ### Approximate Nearest Neighbors
 For search engines, we want a list of results most relavent to a given query, which can be modeled as the nearest neighbors of a given location according to some distance [metric](https://en.wikipedia.org/wiki/Metric_(mathematics)). In this setting it is assumed that the elements are comparable (otherwise there won't be the notion of "near" and "far"),  there are many smart tree based algorithms (kd tree, r\* tree, etc.) devised for nearest neighbor search. 
