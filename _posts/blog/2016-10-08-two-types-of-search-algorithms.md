@@ -24,7 +24,7 @@ However exact search through large scale high dimensional data often takes more 
 - Partition the space into many cells.
 - Given a query, return the elements in its belonging cell (and adjacent cells).
 
-In this case the running time of a query mainly depends on how its belonging cell (and adjacent cells) are partitioned and retrieved, and there're two ways to do that, namely tree based and hash based.
+In this case the running time of a query mainly depends on how its belonging cell (and adjacent cells) are partitioned and retrieved, which can be done in two ways, namely tree based and hash based.
 
 For hash based partitions, the time complexity of getting the belonging cell of a query is constant w.r.t the number of cells \\(N\\). However the time complexity of getting the adjacent cells could be much higher depending on the choice of hash functions. There are many available options, such as locality sensitive hashing (LSH), k-means, hierarchical k-means, product quantization, which are not going to be discussed in this blog.
 
