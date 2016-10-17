@@ -29,18 +29,18 @@ But there's a trait of the data set that we can take advantage of, which is, a p
 With the 98%+ network trained on CASIA WebFace we can do something to clean the MS-Celeb-1M data set.  
 
 - Extracted the features of all the images using the network. 
-- Choose a measure to estimate the discrepancy of the images under the same person based on the features (e.g. the trace of the covariance matrix). 
+- Choose a measure to estimate the discrepancy of the images under the same person based on the features (e.g. trace of the covariance matrix). 
 - Sort the 100k people people by this measure, and the first quarter (or 30k) of the list should be relatively clean.
 - Keep the (about 3m) images of these 30k people for training and discard the rest.
 
 Following same network architecture, we can get a 98.5%+ network with the 3m images. 
-Combining the results of the networks trained on the two data sets will give 99%+ accuracy on LFW.  
+Combining the results of the two networks trained on different data sets will give 99%+ accuracy on LFW.  
 
 ### Notes
 - Use both aligned and unaligned images for training.
 - Test time augmentation: original + flipped.
 - I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a slightly higher weight when combining models.
-- I didn't merge the two training sets into one becuase there are many overlaps.
+- I didn't merge the two training sets into one becuase there seems to be a lot overlaps.
 - The actual process may not be so easy as it sounds in this blog.
 
 
