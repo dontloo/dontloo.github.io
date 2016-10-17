@@ -10,7 +10,6 @@ modified: 2016-10-08
 ---
 
 ### Basics
-
 There're two types of search algorithms, tree based and hash based.
 Perhaps their simplest applications are [`tree maps`](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) and [`hash maps`](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html).
 
