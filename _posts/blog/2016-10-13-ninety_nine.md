@@ -10,7 +10,7 @@ modified: 2016-10-13
 ---
 
 ### Intro
-The title is exaggerated, actually by "99%+ accuracy face recognition" I mean "99+% accuracy on the [LFW (Labeled Faces in the Wild)](http://vis-www.cs.umass.edu/lfw/) dataset". 
+The title is exaggerated, actually by "99%+ accuracy face recognition" I mean "99+% accuracy on the [LFW](http://vis-www.cs.umass.edu/lfw/) dataset". 
 This recipe contains every big idea you need to know to reproduce the results, and it depends on public data sets only.
 
 ### Preliminaries
