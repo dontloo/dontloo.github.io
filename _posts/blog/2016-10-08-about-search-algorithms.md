@@ -31,7 +31,7 @@ For tree based partitions, the running time of getting the belonging and adjacen
 ### Decentralized Graph Based Search for ANN
 At the time of writing (2016), probably the best performing ANN algorithm is given by [NMSLIB](https://github.com/searchivarius/NMSLIB) based on based on hierarchical navigable small world graphs, which beats the best performing tree based (ANNOY) and hash based (FALCONN) algorithms considerably.
 
-The algorithm represents elements as nodes in a small world graph. The core idea is analogue to routing algorithms, given a query, we first randomly select a node as a router, the router then select its closest neighbor to the query as the next router, and forward the query to it. The process is repeated until the closest neighbor to the query is the router itself, then this node will be returned as the approximate nearest neighbor.
+The algorithm represents elements as nodes in a small world graph. The core idea is analogous to routing algorithms, given a query, we first randomly select a node as a router, the router then select its closest neighbor to the query as the next router, and forward the query to it. The process is repeated until the closest neighbor to the query is the router itself, then this node will be returned as the approximate nearest neighbor.
 
 References:  
 [Approximate nearest neighbor algorithm based on navigable small world graphs](https://www.hse.ru/pubs/share/direct/document/128296059)  
