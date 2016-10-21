@@ -5,7 +5,17 @@ modified: 2014-10-08
 ### About Me
 I'm interested in artificial intelligence / machine learning related stuff, I have a master degree specialized in AI, I'm on StackExchange (especially the [stats site](http://stats.stackexchange.com/users/95569/dontloo)) often, and above all I am a programmer :))
 
-**My programming tech stack** (ones that I'm still familiar with are marked in bold)  
+**Algorithms that I have some idea about** 
+
+- *Regression / Classification:* Linear / Logistic Regression, (Convolutional) Neural Networks, Deep Belief Networks, SVMs.
+- *Sequential Models:* CRFs, HMMs, Particle Filtering.
+- *Dimensionality Reduction:* Restricted Boltzmann Machines, (Convolutional) Auto-encoders, Principal Component Analysis, Linear Discriminant Analysis.
+- *Optimizaiton:* Expectation Maximization, Contrastive Divergence, ADAM, Nesterov momentum.
+- *Clustering:* Mean-shift, K-means, DBSCAN.
+- *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY, Product Quantization.
+- *Others:* Joint Bayesian Verification, Rejection / Importance Sampling, A\* Search, dynamic programming.
+
+**Programming stuff I've dealt with** (ones that I'm still familiar with are marked in bold)  
 
 - **Java**, **Python**, **Matlab**, **C/C++**, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
 - *Machine Learning Libs:* **Theano**, **Caffe**, **Scikit-learn**, SVM-Light.
