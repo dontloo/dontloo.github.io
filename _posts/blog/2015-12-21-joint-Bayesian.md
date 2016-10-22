@@ -9,7 +9,7 @@ date: 2015-12-21
 modified: 2015-12-21
 ---
 
-The following gives the detailed derivatation of the formulars in the paper 
+The followings are detailed derivatation of the formulars in the paper 
 [Bayesian Face Revisited: A Joint Formulation](https://www.microsoft.com/en-us/research/publication/bayesian-face-revisited-a-joint-formulation/).
 
 ###Eq.4
