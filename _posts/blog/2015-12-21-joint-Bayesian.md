@@ -17,7 +17,7 @@ The followings are some detailed derivatation of the formulars in the paper
 where \\(\mu\\) and \\(\epsilon\\) follow two independent Gaussians \\(N(0,S_\mu)\\) and \\(N(0,S_\epsilon)\\).
 The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are given by
 \\[\Sigma_I=\[ \begin{matrix} 
-  S_{\mu}+S_{\epsilon} & S_{\mu} \\\\
+  S_{\mu}+S_{\epsilon} & S_{\mu} \\\
   S_{\mu} & S_{\mu}+S_{\epsilon} \end{matrix} \],\\]
 \\[\Sigma_E=\[ \begin{matrix} 
   S_{\mu}+S_{\epsilon} & 0 \\\
@@ -28,12 +28,12 @@ The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are giv
 where
 \\[A=(S_\mu+S_\epsilon)^{-1}-(F+G),\\]
 \\[\[ \begin{matrix} 
-  F+G & G\\
+  F+G & G \\\
   G & F+G 
 \end{matrix} \]
 =
 \[ \begin{matrix} 
-  S_{\mu}+S_{\epsilon} & S_{\mu}\\
+  S_{\mu}+S_{\epsilon} & S_{\mu} \\\
   S_{\mu} & S_{\mu}+S_{\epsilon} 
 \end{matrix} \]^{-1}.\\]
 **Derivatation**
@@ -43,7 +43,7 @@ where
 \end{matrix} \] 
 \Sigma_I^{-1}
 \[ \begin{matrix} 
-  x_1 \\ x_2
+  x_1 \\\ x_2
 \end{matrix} \]),\\]
 where
 \\[\[ \begin{matrix} 
@@ -51,18 +51,18 @@ where
 \end{matrix} \] 
 \Sigma_I^{-1}
 \[ \begin{matrix} 
-  x_1 \\ x_2
+  x_1 \\\ x_2
 \end{matrix} \]
 =
 \[ \begin{matrix} 
   x_1 & x_2
 \end{matrix} \] 
 \[ \begin{matrix} 
-  F+G & G\\
+  F+G & G \\\
   G & F+G 
 \end{matrix} \]
 \[ \begin{matrix} 
-  x_1 \\ x_2
+  x_1 \\\ x_2
 \end{matrix} \]
 =
 x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2\\]
@@ -72,18 +72,18 @@ x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2\\]
 \end{matrix} \] 
 \Sigma_E^{-1}
 \[ \begin{matrix} 
-  x_1 \\ x_2
+  x_1 \\\ x_2
 \end{matrix} \]
 =
 \[ \begin{matrix} 
   x_1 & x_2
 \end{matrix} \] 
 \[ \begin{matrix} 
-  (S_{\mu}+S_{\epsilon})^{-1} & 0\\
+  (S_{\mu}+S_{\epsilon})^{-1} & 0 \\\
   0 & (S_{\mu}+S_{\epsilon})^{-1}
 \end{matrix} \]
 \[ \begin{matrix} 
-  x_1 \\ x_2
+  x_1 \\\ x_2
 \end{matrix} \]
 =
 x_1^T(S_{\mu}+S_{\epsilon})^{-1}x_1+x_2^T(S_{\mu}+S_{\epsilon})^{-1}x_2\\]
