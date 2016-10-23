@@ -116,7 +116,7 @@ The distribution the hidden variable \\(\mathbf{h}\\) is \\(N(0,\Sigma_h)\\), wh
 
 **Derivation**  
 The distribution of \\(\mathbf{x}\\) is another Gaussian \\(N(0,\Sigma_x)\\)  where 
-\\[\Sigma_x=P\Sigma_hP^T\left[\begin{matrix}
+\\[\Sigma_x=P\Sigma_hP^T=\left[\begin{matrix}
 S_{\mu}+S_{\epsilon} & S_{\mu} & \dots & S_{\mu} \\\
 S_{\mu} & S_{\mu}+S_{\epsilon} & \dots & S_{\mu} \\\
 \vdots & \vdots & \ddots & \vdots \\\
