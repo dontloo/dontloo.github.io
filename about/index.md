@@ -7,7 +7,7 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 
 **Algorithms that I have some idea about** 
 
-- *Regression / Classification:* Linear / Logistic Regression, (Convolutional) Neural Networks, Deep Belief Networks, SVMs.
+- *Regression / Classification:* Linear / Logistic Regression, (Convolutional) Neural Networks, SVMs.
 - *Sequential Models:* CRFs, HMMs, Particle Filtering.
 - *Dimensionality Reduction:* Restricted Boltzmann Machines, (Convolutional) Auto-encoders, Principal Component Analysis, Linear Discriminant Analysis.
 - *Optimization:* Expectation Maximization, Contrastive Divergence, ADAM, Nesterov momentum.
