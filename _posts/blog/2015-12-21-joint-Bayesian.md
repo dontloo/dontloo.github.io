@@ -126,4 +126,4 @@ ref: [Linear combinations of normal random variables](https://www.statlect.com/p
 \\[\mathbf{h}=P^\dagger\mathbf{x}=P^\dagger\Sigma_x\Sigma^{-1}_x\mathbf{h}=P^\dagger P\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}\\]
 
 ### Discussion  
-Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? Because \\(\mathbf{h}\\) does not have a unique solution, since it has one more degree of freedom than \\(\mathbf{x}\\) (sort of analogous to the `ddof` parameter when computing the variance because we don't know where is the ture mean \\(\mu\\)). Doing MLE by EM has turned out to be a better choice.
+Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? Because \\(\mathbf{h}\\) does not have a unique solution, since it has one more degree of freedom than \\(\mathbf{x}\\) (sort of analogous to the biased variance problem because we don't know where is the ture mean \\(\mu\\)). Doing MLE by EM has turned out to be a better choice.
