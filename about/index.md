@@ -12,7 +12,7 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 - *Dimensionality Reduction:* Restricted Boltzmann Machines, (Convolutional) Auto-encoders, Principal Component Analysis, Linear Discriminant Analysis.
 - *Optimization:* Expectation Maximization, Contrastive Divergence, ADAM, Nesterov momentum.
 - *Clustering:* Mean-shift, K-means, DBSCAN.
-- *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY, Product Quantization.
+- *Nearest Neighbor Search:* (Hierarchical) Navigable Small Worlds, ANNOY, Product Quantization.
 - *Others:* Joint Bayesian Verification, Rejection / Importance Sampling, A\* Search, dynamic programming.
 
 **Programming stuff I've dealt with** (ones that I'm still familiar with are marked in bold)  
