@@ -15,7 +15,7 @@ The followings are some detailed derivatation of the formulars in the paper
 ### Background
 \\[x=\mu+\epsilon\\]
 where \\(\mu\\) and \\(\epsilon\\) follow two independent Gaussians \\(N(0,S_\mu)\\) and \\(N(0,S_\epsilon)\\).
-The convariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are given by
+The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are given by
 \\[\Sigma_I=\left[ \begin{matrix} 
   S_{\mu}+S_{\epsilon} & S_{\mu}\\
   S_{\mu} & S_{\mu}+S_{\epsilon} 
