@@ -108,7 +108,7 @@ I & 0 & I & \dots & 0 \\\
 \vdots & \vdots & \vdots & \ddots & \vdots \\\
 I & 0 & 0 & ... & I
 \end{matrix}\right]\\]
-\\(\mathbf{h}\\) follows the distribution \\(N(0,\Sigma_h)\\), where \\(\Sigma_h=diag(S_\mu,S_\epsilon,\dots,S_\epsilon)\\).
+The distribution the hidden variable \\(\mathbf{h}\\) is \\(N(0,\Sigma_h)\\), where \\(\Sigma_h=diag(S_\mu,S_\epsilon,\dots,S_\epsilon)\\).
 So the distribution of \\(\mathbf{x}\\) is another Gaussian \\(N(0,\Sigma_x)\\)  where 
 \\[\Sigma_x=P\Sigma_hP^T\left[\begin{matrix}
 S_{\mu}+S_{\epsilon} & S_{\mu} & \dots & S_{\mu} \\\
@@ -119,3 +119,7 @@ S_{\mu} & S_{\mu} & ... & S_{\mu}+S_{\epsilon}
 ref: [Linear combinations of normal random variables](https://www.statlect.com/probability-distributions/normal-distribution-linear-combinations).  
 
 **Eq.8**
+\\[E(\mathbf{h}|\mathbf{x})=\Sigma_hP^T\Sigma_x^{-1}\mathbf{x}\\]
+
+**Derivatation**
+\\[\mathbf{h}=P^{-1}\mathbf{x}=P^-1\Sigma_x\Sigma^{-1}_x\mathbf{h}=P^-1P\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}\\]
