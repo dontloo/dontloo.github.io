@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes on Joint Bayesian Verification"
+title: "More on Joint Bayesian Verification"
 modified:
 categories: blog
 excerpt:
