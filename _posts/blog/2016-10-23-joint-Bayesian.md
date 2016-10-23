@@ -126,6 +126,6 @@ ref: [Linear combinations of normal random variables](https://www.statlect.com/p
 \\[\mathbf{h}=P^\dagger\mathbf{x}=P^\dagger\Sigma_x\Sigma^{-1}_x\mathbf{h}=P^\dagger P\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}\\]
 
 ### Discussion  
-Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? 
+Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) directly instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? 
 
 Because \\(\mathbf{h}\\) does not have a unique solution, since it has one more degree of freedom than \\(\mathbf{x}\\) (sort of analogous to the biased variance estimation because we don't know where is the true mean \\(\mu\\)). Similarly the scatter matrices of Linear Discriminant Analysis (LDA) mentioned in the paper can be thought of as another solution for \\(\mathbf{h}\\) based on \\(\mathbf{x}\\) directly. Whereas the paper has shown doing EM is a better choice.
