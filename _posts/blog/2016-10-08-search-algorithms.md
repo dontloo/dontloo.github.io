@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Search Algorithms"
+title: "About Search Algorithms"
 modified:
 categories: blog
 excerpt:
