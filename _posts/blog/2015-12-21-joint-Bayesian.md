@@ -9,7 +9,7 @@ date: 2016-10-23
 modified: 2016-10-23
 ---
 
-### Derivatations
+### Derivations
 The followings are some detailed derivatation of the formulars in the paper 
 [Bayesian Face Revisited: A Joint Formulation](https://www.microsoft.com/en-us/research/publication/bayesian-face-revisited-a-joint-formulation/).  
 
@@ -38,7 +38,7 @@ where
   S_{\mu} & S_{\mu}+S_{\epsilon} 
 \end{matrix} \right]^{-1}.\\]
 
-**Derivatation**  
+**Derivation**  
 \\[p(x_1,x_2|H_I)=\frac{1}{norm}exp(-\frac{1}{2}
 \left[ \begin{matrix} 
   x_1^T & x_2^T
@@ -114,7 +114,7 @@ The distribution the hidden variable \\(\mathbf{h}\\) is \\(N(0,\Sigma_h)\\), wh
 **Eq.8**  
 \\[E(\mathbf{h}|\mathbf{x})=\Sigma_hP^T\Sigma_x^{-1}\mathbf{x}\\]
 
-**Derivatation**  
+**Derivation**  
 The distribution of \\(\mathbf{x}\\) is another Gaussian \\(N(0,\Sigma_x)\\)  where 
 \\[\Sigma_x=P\Sigma_hP^T\left[\begin{matrix}
 S_{\mu}+S_{\epsilon} & S_{\mu} & \dots & S_{\mu} \\\
