@@ -18,12 +18,10 @@ where \\(\mu\\) and \\(\epsilon\\) follow two independent Gaussians \\(N(0,S_\mu
 The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are given by
 \\[\Sigma_I=\[ \begin{matrix} 
   S_{\mu}+S_{\epsilon} & S_{\mu}\\
-  S_{\mu} & S_{\mu}+S_{\epsilon} 
-\end{matrix} \],\\]
+  S_{\mu} & S_{\mu}+S_{\epsilon} \end{matrix} \],\\]
 \\[\Sigma_E=\[ \begin{matrix} 
   S_{\mu}+S_{\epsilon} & 0\\
-  0 & S_{\mu}+S_{\epsilon} 
-\end{matrix} \].\\]
+  0 & S_{\mu}+S_{\epsilon} \end{matrix} \].\\]
 
 ### Eq.4  
 \\[r(x_1,x_2)=\log\frac{p(x_1,x_2|H_I)}{p(x_1,x_2|H_E)}=x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2+const,\\]
