@@ -29,9 +29,11 @@ For hash based partitions, the time complexity of getting the belonging cell of 
 For tree based partitions, the running time of getting the belonging and adjacent cells can be bounded by \\(O(\log N)\\) with the use of priority queues. There's a tree based algorithm [ANNOY (Approximate Nearest Neighbors Oh Yeah)](https://erikbern.com/2015/10/01/nearest-neighbors-and-vector-models-part-2-how-to-search-in-high-dimensional-spaces/) that has many nice properties, easy to extend the tree structure for incoming data, easy to switch between ANN and radius-based ANN queries, etc.
 
 ### Decentralized Graph Based Search for ANN
-At the time of writing (2016), probably the best performing ANN algorithm is given by [NMSLIB](https://github.com/searchivarius/NMSLIB) based on based on hierarchical navigable small world graphs, which beats the best performing tree based (ANNOY) and hash based (FALCONN) algorithms considerably.
+At the time of writing (2016), probably the best performing ANN algorithm is given by [NMSLIB](https://github.com/searchivarius/NMSLIB) based on based on hierarchical navigable small world graphs, which beats the best performing tree based (ANNOY) and hash based (FALCONN) algorithms considerably. Moreover the algorithm is quite decentralized and distributed, multiple queries and insertions can be processed independently on different graph nodes.
 
 The algorithm represents elements as nodes of a [small world network](https://en.wikipedia.org/wiki/Small-world_network). The core idea is analogous to routing algorithms, given a query, we first randomly select a node as the starting router, the router then select its closest neighbor to the query as the next router. The process is repeated until the closest neighbor to the query is the router itself, then the final router will be returned as the approximate nearest neighbor.
+
+For returning more than one nearest neighbors, again the priority queue data structure is used when traversing neighbors of each node.
 
 References:  
 [Approximate nearest neighbor algorithm based on navigable small world graphs](https://www.hse.ru/pubs/share/direct/document/128296059)  
