@@ -9,11 +9,11 @@ date: 2015-12-21
 modified: 2015-12-21
 ---
 
+### Derivatations
 The followings are some detailed derivatation of the formulars in the paper 
 [Bayesian Face Revisited: A Joint Formulation](https://www.microsoft.com/en-us/research/publication/bayesian-face-revisited-a-joint-formulation/).  
 
-### Eq.4  
-**Background**  
+**Eq.4 Background**  
 \\[x=\mu+\epsilon\\]
 where \\(\mu\\) and \\(\epsilon\\) follow two independent Gaussians \\(N(0,S_\mu)\\) and \\(N(0,S_\epsilon)\\).
 The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are given by
@@ -99,8 +99,7 @@ where
 x_1^T(S_{\mu}+S_{\epsilon})^{-1}x_1+x_2^T(S_{\mu}+S_{\epsilon})^{-1}x_2.\\]
 \\[\therefore r(x_1,x_2)=\log\frac{p(x_1,x_2|H_I)}{p(x_1,x_2|H_E)}=x_1^T((S_\mu+S_\epsilon)^{-1}-(F+G))x_1+x_2^T((S_\mu+S_\epsilon)^{-1}-(F+G))x_2-2x_1^TGx_2+const=x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2+const\\]
 
-### Eq.8
-**Background**  
+**Eq.8 Background**  
 \\[\mathbf{h}=[\mu;\epsilon_1;...;\epsilon_m]\\]
 \\[\mathbf{x}=[x_1;...;x_m]\\]
 \\[\mathbf{x}=P\mathbf{h}\\]
