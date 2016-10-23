@@ -66,7 +66,15 @@ where
 \end{matrix} \right]
 =
 x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2\\]
-
+\\[p(x_1,x_2|H_E)=\frac{1}{norm}exp(-\frac{1}{2}
+\left[ \begin{matrix} 
+  x_1^T & x_2^T
+\end{matrix} \right] 
+\Sigma_E^{-1}
+\left[ \begin{matrix} 
+  x_1 \\\ x_2
+\end{matrix} \right]),\\]
+where
 \\[\left[ \begin{matrix} 
   x_1^T & x_2^T
 \end{matrix} \right] 
