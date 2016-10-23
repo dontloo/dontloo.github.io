@@ -27,64 +27,64 @@ The covariance matrices of \\(p(x_1,x_2|H_I)\\) and \\(p(x_1,x_2|H_E)\\) are giv
 \\[r(x_1,x_2)=\log\frac{p(x_1,x_2|H_I)}{p(x_1,x_2|H_E)}=x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2+const,\\]
 where
 \\[A=(S_\mu+S_\epsilon)^{-1}-(F+G),\\]
-\\[\[ \begin{matrix} 
+\\[\left[ \begin{matrix} 
   F+G & G \\\
   G & F+G 
-\end{matrix} \]
+\end{matrix} \right]
 =
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   S_{\mu}+S_{\epsilon} & S_{\mu} \\\
   S_{\mu} & S_{\mu}+S_{\epsilon} 
-\end{matrix} \]^{-1}.\\]
+\end{matrix} \right]^{-1}.\\]
 **Derivatation**
 \\[p(x_1,x_2|H_I)=\frac{1}{norm}exp(-\frac{1}{2}
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1^T & x_2^T
-\end{matrix} \] 
+\end{matrix} \right] 
 \Sigma_I^{-1}
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 \\\ x_2
-\end{matrix} \]),\\]
+\end{matrix} \right]),\\]
 where
-\\[\[ \begin{matrix} 
+\\[\left[ \begin{matrix} 
   x_1^T & x_2^T
-\end{matrix} \] 
+\end{matrix} \right] 
 \Sigma_I^{-1}
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 \\\ x_2
-\end{matrix} \]
+\end{matrix} \right]
 =
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 & x_2
-\end{matrix} \] 
+\end{matrix} \right] 
 \[ \begin{matrix} 
   F+G & G \\\
   G & F+G 
 \end{matrix} \]
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 \\\ x_2
-\end{matrix} \]
+\end{matrix} \right]
 =
 x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2\\]
 
-\\[\[ \begin{matrix} 
+\\[\left[ \begin{matrix} 
   x_1^T & x_2^T
-\end{matrix} \] 
+\end{matrix} \right] 
 \Sigma_E^{-1}
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 \\\ x_2
-\end{matrix} \]
+\end{matrix} \right]
 =
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   x_1 & x_2
-\end{matrix} \] 
-\[ \begin{matrix} 
+\end{matrix} \right] 
+\left[ \begin{matrix} 
   (S_{\mu}+S_{\epsilon})^{-1} & 0 \\\
   0 & (S_{\mu}+S_{\epsilon})^{-1}
-\end{matrix} \]
-\[ \begin{matrix} 
+\end{matrix} \right]
+\left[ \begin{matrix} 
   x_1 \\\ x_2
-\end{matrix} \]
+\end{matrix} \right]
 =
 x_1^T(S_{\mu}+S_{\epsilon})^{-1}x_1+x_2^T(S_{\mu}+S_{\epsilon})^{-1}x_2\\]
 \\[\therefore r(x_1,x_2)=\log\frac{p(x_1,x_2|H_I)}{p(x_1,x_2|H_E)}=x_1^T((S_\mu+S_\epsilon)^{-1}-(F+G))x_1+x_2^T((S_\mu+S_\epsilon)^{-1}-(F+G))x_2-2x_1^TGx_2+const=x_1^TAx_1+x_2^TAx_2-2x_1^TGx_2+const\\]
