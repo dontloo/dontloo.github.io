@@ -122,4 +122,4 @@ S_{\mu} & S_{\mu}+S_{\epsilon} & \dots & S_{\mu} \\\
 S_{\mu} & S_{\mu} & ... & S_{\mu}+S_{\epsilon}
 \end{matrix}\right]\\]
 ref: [Linear combinations of normal random variables](https://www.statlect.com/probability-distributions/normal-distribution-linear-combinations).  
-\\[\mathbf{h}=P^{-1}\mathbf{x}=P^-1\Sigma_x\Sigma^{-1}_x\mathbf{h}=P^{-1}P\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}\\]
+\\[\mathbf{h}=P^{-1}\mathbf{x}=P^{-1}\Sigma_x\Sigma^{-1}_x\mathbf{h}=P^{-1}P\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{h}\\]
