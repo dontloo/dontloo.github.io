@@ -57,10 +57,10 @@ where
 \left[ \begin{matrix} 
   x_1 & x_2
 \end{matrix} \right] 
-\[ \begin{matrix} 
+\left[ \begin{matrix} 
   F+G & G \\\
   G & F+G 
-\end{matrix} \]
+\end{matrix} \right]
 \left[ \begin{matrix} 
   x_1 \\\ x_2
 \end{matrix} \right]
