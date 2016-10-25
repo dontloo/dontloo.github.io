@@ -39,7 +39,7 @@ Combining the results of the two networks trained on different data sets will gi
 ### Notes
 - Use both aligned and unaligned images for training.
 - Test time augmentation: original + flipped.
-- The feature values are usually known to follow some Gaussian like distribution, using the Gaussian CDF values instead will help with verification with Euclidean distance.
+- The feature values are usually known to follow some Gaussian like distribution, using the Gaussian CDF values instead will help for verification with Euclidean distance.
 - I didn't merge the two training sets into one because they seem to have a lot of overlaps.
 - If use the aligned LFW images provided by CASIA WebFace for verification, it might help giving the CASIA WebFace network a slightly higher weight when combining models.
 - The actual process may not be so easy as it sounds in this blog.
