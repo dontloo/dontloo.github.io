@@ -128,4 +128,6 @@ ref: [Linear combinations of normal random variables](https://www.statlect.com/p
 ### Discussion  
 Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) directly instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? 
 
-Because \\(\mathbf{h}\\) does not have a unique solution, since it has one more degree of freedom than \\(\mathbf{x}\\) (sort of analogous to the biased variance estimation because we don't know where is the true mean \\(\mu\\)). Similarly the scatter matrices of Linear Discriminant Analysis (LDA) mentioned in the paper can be thought of as another solution for \\(\mathbf{h}\\) based on \\(\mathbf{x}\\) directly. Whereas the paper has shown doing EM is a better choice.
+Because it is not the only solution, since \\(\mathbf{h}\\) has one more degree of freedom than \\(\mathbf{x}\\). The scatter matrices of Linear Discriminant Analysis (LDA) mentioned in the paper can be thought of as another solution for \\(\mathbf{x}=P\mathbf{h}\\). This is sort of analogous to the biased variance estimation because we don't know where is the true mean \\(\mu\\).
+
+So the paper has shown doing EM is a smarter choice.
