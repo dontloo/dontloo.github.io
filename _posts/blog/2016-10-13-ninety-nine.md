@@ -39,8 +39,9 @@ Combining the results of the two networks trained on different data sets will gi
 ### Notes
 - Use both aligned and unaligned images for training.
 - Test time augmentation: original + flipped.
-- I used the aligned LFW images provided by CASIA WebFace for validation, so I gave the CASIA WebFace network a slightly higher weight when combining models.
-- I didn't merge the two training sets into one becuase there seems to be a lot overlaps.
+- If the feature values are knows to follow some Gaussian like distribution, using the Gaussian CDF values for verification will help.
+- I didn't merge the two training sets into one because there seems to be a lot overlaps.
+- If use the aligned LFW images provided by CASIA WebFace for validation, it might help giving the CASIA WebFace network a slightly higher weight when combining models.
 - The actual process may not be so easy as it sounds in this blog.
 
 
