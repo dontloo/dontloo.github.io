@@ -9,7 +9,8 @@ date: 2016-11-8
 ---
 
 This post talks about feedforward neural networks (FFNNs), but the ideas should be generally applicable to recurrent networks too.
-Network training is to optimize a loss function \\(E(y(x|\theta), t)\\) of the parameter  \\(\theta\\), where \\(x\\) is the data \\(t\\) is the label, \\\\(y(x|\theta)\\) is the output of the network. 
+
+Network training is to optimize a loss function \\(E(y(x|\theta), t)\\) of parameter \\(\theta\\), where \\(x\\) is the data \\(t\\) is the label, \\\\(y(x|\theta)\\) is the output of the network. 
 
 ### Is the same network being used for both training and test?
 If it were in the last century, the answer might be yes. But no. 
