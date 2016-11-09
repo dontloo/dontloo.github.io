@@ -29,3 +29,4 @@ The notion of a network is broken down into two types of functions,
 one is for optimization w.r.t some objective function (training), 
 the other directly computes the output given an input (test).
 
+TBC
