@@ -13,15 +13,15 @@ This post talks about feedforward neural networks (FFNNs), but the ideas should 
 Network training is to optimize a loss function \\(E(y(x|\theta), t)\\) of parameter \\(\theta\\), where \\(x\\) is the data \\(t\\) is the label, \\\\(y(x|\theta)\\) is the output of the network. 
 
 ### Same network for training and test?
-Is the networks for training and test the same? If it were in the last century, the answer might be yes. But no. 
-Recently developed layers such as dropout, batch normalization behave differently in training and test. 
-Sometimes people only need intermediate results of the network as feature representations. 
-Sometimes intermediate results need to be shared in order to efficiently process data of non-fixed shape.
+Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
+Recently developed techniques such as dropout, batch normalization behave differently in training and test. 
+In many cases people only need the intermediate result as feature representations for other tasks at test time. 
+There're a few examples of different networks used for training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [https://arxiv.org/abs/1605.07648](https://arxiv.org/abs/1605.07648).
 
-Layer behaviors can be different, network architectures can be different, 
+So layer behaviors can be different, network architectures can be different, 
 the only thing that connects training and test is the parameters. 
-So, in terms of coding, we should totally decouple the training and test networks as two different functions. 
-That is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
+In terms of coding, we totally should decouple the training and test networks as two different functions,
+that is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
 
 ### My library
 A layers is associated with its parameters and interacts with other layers, 
