@@ -14,12 +14,11 @@ Network training is to optimize a loss function \\(E(y(x|\theta), t)\\) of param
 
 ### Same network for training and test?
 Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
-Recently developed techniques such as dropout, batch normalization behave differently in training and test. 
-In many cases people only need the intermediate result as feature representations for other tasks at test time. 
-There're a few examples of different networks used for training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [https://arxiv.org/abs/1605.07648](https://arxiv.org/abs/1605.07648).
+For instance recently developed layers such as batch normalization behave differently in training and test, and in many cases people only need the intermediate result as feature representations for other tasks at test time. 
+There're a few more examples of different architectures used for training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [FractalNet: Ultra-Deep Neural Networks without Residuals](https://arxiv.org/abs/1605.07648).
 
 So layer behaviors can be different, network architectures can be different, 
-the only thing that connects training and test is the parameters. 
+the only thing that connects training and test is (a subset of) the parameters. 
 In terms of coding, we totally should decouple the training and test networks as two different functions,
 that is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
 
