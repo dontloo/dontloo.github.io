@@ -24,11 +24,13 @@ In terms of coding, we totally should decouple the training and test networks as
 that is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
 
 ### My library
-A layers is associated with its parameters and interacts with other layers, 
-it can behave differently for training, test or else. 
 The notion of a network is broken down into two types of functions, 
-one is for optimization w.r.t some objective function (training), 
-the other directly computes the output given an input (test).
+one is for optimizing an objective function w.r.t some parameters given the data (training), 
+the other computes the output for some input given the parameters (test).
+A function is defined by stacking up layers.
+A layers may have its parameter, input and output, 
+it can behave differently for training, test or else. 
+Parameters can be shared between layers and functions.
 
 TBC
 ### VAE example
