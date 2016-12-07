@@ -10,7 +10,7 @@ date: 2016-11-8
 
 This post talks about feedforward neural networks (FFNNs), but the ideas should be applicable to recurrent networks as well.
 
-Network training is to optimize a loss function \\(E(y(x|\theta), t)\\) of parameter \\(\theta\\), where \\(x\\) is the data \\(t\\) is the label, \\(y(x|\theta)\\) is the output of the network. 
+Network training is to optimize a loss function \\( E(y(x|\theta), t) \\) of parameter \\( \theta \\), where \\( x \\) is the data \\( t \\) is the label, \\( y(x|\theta) \\) is the output of the network. 
 
 ### Same Network for Training and Test?
 Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
@@ -20,7 +20,7 @@ There're a few more examples of different architectures used in training and tes
 So layer behaviors can be different, network architectures can be different, 
 the only thing that connects training and test is (a subset of) the parameters. 
 In terms of coding, we totally should decouple the training and test networks as two different functions,
-that is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
+that is to say, the training defines how to search for \\( \theta \\), the test defines how to use \\( \theta \\).
 
 ### Implementing Neural Networks
 I wrote a neural network library myself following the following key points, and hopefully it would help sorting out the related concepts in terms of implementation.  
