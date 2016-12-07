@@ -10,12 +10,12 @@ date: 2016-11-8
 
 This post talks about feedforward neural networks (FFNNs), but the ideas should be applicable to recurrent networks as well.
 
-Network training is to optimize a loss function \\( E(y(x|\theta), t) \\) of parameter \\( \theta \\), where \\( x \\) is the data \\( t \\) is the label, \\( y(x|\theta) \\) is the output of the network. 
+Network training is to optimize a loss function \\( E(y(x\mid\theta), t) \\) of parameter \\( \theta \\), where \\( x \\) is the data \\( t \\) is the label, \\( y(x\mid\theta) \\) is the output of the network. 
 
 ### Same Network for Training and Test?
 Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
 For instance, recently developed layers such as batch normalization behave differently at training and test time, and sometimes people only need some intermediate result as feature representations for other tasks at test time. 
-There're a few more examples of different architectures used in training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [FractalNet: Ultra-Deep Neural Networks without Residuals](https://arxiv.org/abs/1605.07648).
+Here're a few examples of different architectures in training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [FractalNet: Ultra-Deep Neural Networks without Residuals](https://arxiv.org/abs/1605.07648).
 
 So layer behaviors can be different, network architectures can be different, 
 the only thing that connects training and test is (a subset of) the parameters. 
