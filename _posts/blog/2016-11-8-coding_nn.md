@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes on Coding Neural Networks"
-modified:
+modified: 2016-11-8
 categories: blog
 excerpt:
 tags: []
