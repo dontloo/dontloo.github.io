@@ -22,15 +22,13 @@ the only thing that connects training and test is (a subset of) the parameters.
 In terms of coding, we totally should decouple the training and test networks as two different functions,
 that is to say, the training defines how to search for \\(\theta\\), the test defines how to use \\(\theta\\).
 
-### Implementing a Library
-I wrote a neural network library myself following the following key points.
+### Implementing Neural Networks
+I wrote a neural network library myself following the following key points, and hopefully it would help sorting out the related concepts in terms of implementation.  
 - The notion of a network is broken down into two types of functions, 
-one is for optimizing an objective function w.r.t some parameters given the data (training), 
+one is for optimizing an objective function w.r.t some parameters through an optimizer (training), 
 the other computes the output for some input given the parameters (test).
 - A function is defined by stacking up layers.
-- A layers can have its parameter, input and output, 
-it may behave differently for training, test or else. 
+- A layer can have its parameter, input and output, it may behave differently for training, test or else. 
 - Parameters can be shared between layers and functions.
 
-TBC
 ### VAE example
