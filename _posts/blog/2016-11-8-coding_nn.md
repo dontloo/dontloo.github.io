@@ -24,7 +24,7 @@ that is to say, the training defines how to search for \\( \theta \\), the test 
 
 ### Implementing Neural Networks
 I wrote a neural network library myself following the following key points, and hopefully it would help sorting out the related concepts in terms of implementation.  
-- The notion of a network is broken down into two types of functions, 
+- The notion of a network breaks down into two types of functions, 
 one is for optimizing an objective function w.r.t some parameters through an optimizer (training), 
 the other computes the output for some input given the parameters (test).
 - A function is defined by stacking up layers.
