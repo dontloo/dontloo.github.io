@@ -31,8 +31,11 @@ The neural network library I wrote follows the following key points, hopefully i
 - A layer can have its parameter, input and output, it may behave differently for training, test or else. 
 - Parameters can be shared between layers and functions.
 
-### VAE example
-Here are some code pieces of implementing a variational autoencoder using my library, hopefully it would illustrate how the library works in more detail.
+### Variational Autoencoder Example
+
+![samples generated](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/vae.png)
+
+Here are some code snippets of implementing a variational autoencoder using my library, hopefully it would illustrate how the library works in more detail.
 
 ```python
 # preparing data
@@ -97,5 +100,3 @@ plt.imshow(big_im, cmap='Greys_r')
 plt.axis('off')
 plt.show()
 ```
-
-![samples generated](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/vae.png)
