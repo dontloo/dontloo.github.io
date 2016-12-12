@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
+title: " "
 modified: 2014-10-08
 ---
 ### About Me
@@ -27,6 +27,6 @@ I'm interested in artificial intelligence / machine learning related stuff, I ha
 - *Other Libs / Tools::* Rails, JQuery, Bootstrap, Matlab MEX.
 - Lambda calculus
 
-### About This Blog
+### About The Blog
 
 This blog is powered by [Jekyll](http://jekyllrb.com/) using the [So Simple Theme](https://mmistakes.github.io/so-simple-theme/), see [How to Create a Blog Like This](/blog/how-to) for setup instructions.
