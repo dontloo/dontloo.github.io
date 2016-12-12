@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: ""
 modified: 2014-10-08
 ---
 ### About Me
