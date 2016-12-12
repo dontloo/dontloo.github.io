@@ -27,9 +27,8 @@ that is to say, the training specifies how to search for the parameters, the tes
 
 ### Implementing a Neural Network Library
 The neural network library I wrote follows the following key points, hopefully it would help sorting out the related concepts in terms of implementation.  
-- The notion of a network breaks down into two types of functions, 
-one is for optimizing an objective function w.r.t some parameters through an optimizer (training), 
-the other computes the output for some input given the parameters (test).
+
+- The notion of a network breaks down into two types of functions, one is for optimizing an objective function w.r.t some parameters through an optimizer (training), the other computes the output for some input given the parameters (test).
 - A function is defined by stacking up layers.
 - A layer can have its parameter, input and output, it may behave differently for training, test or else. 
 - Parameters can be shared between layers and functions.
