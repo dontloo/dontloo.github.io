@@ -8,12 +8,10 @@ tags: []
 date: 2016-11-8
 ---
 
-This post talks about feedforward neural networks (FFNNs), but the ideas should be applicable to recurrent networks as well.
-
 ### Existing Neural Network Libraries
-There're many brilliant open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface (e.g. caffe and tensorflow), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it is a common need for people in the field to experiment new ideas beyond those encapsulated interfaces, and I often find that the actual interface I want is just the source code.
+There're many brilliant open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface (e.g. caffe and tensorflow), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it is a common need for people in the field to experiment new ideas beyond those encapsulated interfaces, and I often find that the actual interface I need is just the source code.
 
-[Keras](https://github.com/fchollet/keras) does a great job on that, as stated as one of their guiding principles, it was developed with a focus on enabling fast experimentation. *Being able to go from idea to result with the least possible delay is key to doing good research.* Before I found keras, I wrote a library myself for such purpose, followings are some implementation notes.
+[Keras](https://github.com/fchollet/keras) does a great job on that, as stated as one of their guiding principles, it was developed with a focus on enabling fast experimentation. *Being able to go from idea to result with the least possible delay is key to doing good research.* Before I found keras, I wrote a library myself for such purpose, followings are some implementation notes. It mostly talks about feedforward neural networks (FFNNs), but the idea should be applicable to recurrent networks as well.
 
 ### Same Network for Training and Test?
 Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
