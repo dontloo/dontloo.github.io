@@ -35,7 +35,7 @@ The neural network library I wrote follows the following key points, hopefully i
 
 ![samples generated](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/vae.png)
 
-Here are some code snippets of implementing a variational autoencoder using my library, hopefully it would illustrate how the library works in more detail.
+Here are some code snippets of implementing a variational autoencoder using my own library, hopefully it would illustrate how the it works in more detail.
 
 ```python
 # preparing data
