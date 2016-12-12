@@ -33,15 +33,15 @@ The neural network library I wrote follows the following key points, hopefully i
 
 ### VAE example
 Here are some code pieces of implementing a variational autoencoder using my library, hopefully it would illustrate how the library works in more detail.
-```python
-print x
-```
+
 ```python
 # preparing data
 im_pro_fn = intnet.data.get_im_pro_fn(color_space="L", scale=True, flatten=True)  # load image as grayscale
 train_ds = intnet.data.CategoricalData(train_lst, "lazy", process_data_fn=im_pro_fn, x_dtype=floatX)
 test_ds = intnet.data.CategoricalData(test_lst, "lazy", process_data_fn=im_pro_fn, x_dtype=floatX)
+```
 
+```python
 # encoder
 l_x = lay.Input((batch_sze, row*column), floatX)
 l_h = lay.Activation(lay.FullyConnected(l_x, 256), "relu")
