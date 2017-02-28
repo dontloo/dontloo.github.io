@@ -4,7 +4,7 @@ title: " "
 modified: 2014-10-08
 ---
 ### About Me
-I'm interested in artificial intelligence and machine learning related stuff, I have a master degree specialized in AI, I'm on StackExchange often, and above all I am a programmer :))
+I'm interested in artificial intelligence and machine learning stuff, I have a master degree specialized in AI, I'm on StackExchange often, and above all I am a programmer :))
 
 <a href="http://stackexchange.com/users/3648370/dontloo"><img src="http://stackexchange.com/users/flair/3648370.png" width="208" height="58" alt="profile for dontloo on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for dontloo on Stack Exchange, a network of free, community-driven Q&amp;A sites" /></a>
 
