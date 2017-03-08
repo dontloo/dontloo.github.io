@@ -13,7 +13,7 @@ I'm interested in artificial intelligence and machine learning stuff, I have a m
 - *Regression/Classification:* Linear/Logistic Regression, Neural Networks, SVMs.
 - *Sequential Models:* CRFs, HMMs, Particle Filtering.
 - *Dimensionality Reduction:* Restricted Boltzmann Machines, (Variational) Auto-encoders, PCA, Linear Discriminant Analysis.
-- *Optimization:* EM, (Nesterov) momentum, AdaGrad/ADAM.
+- *Optimization:* EM, NAG, AdaGrad/ADAM.
 - *Clustering:* Mean-shift, K-means, DBSCAN.
 - *Nearest Neighbor Search:* (Hierarchical) Navigable Small Worlds, ANNOY.
 - *Others:* Joint Bayesian Verification, Rejection/Importance Sampling, A\* Search, dynamic programming.
