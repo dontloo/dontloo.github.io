@@ -19,7 +19,7 @@ which is known as maximum a posteriori (MAP).
 
 ### Bayesian Learning
 While the Bayesian learning approach is aimed at computing the whole posterior distribution instead of doing a point estimation.
-The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta )\\, 
+The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), 
 as mentioned in Pattern Recognition and Machine Learning
 
 >  In the case of continuous variables, the required integrations may not have closed-form analytical solutions, 
@@ -30,7 +30,11 @@ so that exact calculation is prohibitively expensive.
 
 Therefore ideally we want \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\),
 so that the posterior can be solved analytically and again can be used as the prior when the next observation comes in.
-Otherwise we would rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
+For instance say our model follows \\( N(x|f(\theta), \sigma) \\), and we assume a Gaussian prior for \\( \theta \\),
+then the posterior is angain a Gaussian distribution if \\( f(\theta) \\) is linear.
+
+
+In other cases we would rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
 or the combination of both (e.g. auto-encoding variational Bayes) for an approximation.
 
 ### Discussion
