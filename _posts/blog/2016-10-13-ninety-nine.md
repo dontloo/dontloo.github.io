@@ -41,7 +41,7 @@ Combining the results of the two networks trained on different data sets will gi
 - Test time augmentation: original + flipped.
 - The feature values are usually known to follow some distribution (e.g. Gaussian), using its CDF to normalize the values will help for verification with Euclidean distance.
 - I didn't merge the two training sets into one because there seem to be a lot overlaps.
-- If use the aligned LFW images provided by CASIA WebFace for verification, it might help giving the CASIA WebFace network a slightly higher weight when combining models.
+- If using the aligned LFW images provided by CASIA WebFace for verification, it might help giving the CASIA WebFace network a slightly higher weight when combining models.
 - Label smoothing will improve the performance further.
 - The actual process may not be so easy as it sounds in this blog.
 
