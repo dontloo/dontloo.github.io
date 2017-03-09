@@ -8,16 +8,16 @@ tags: []
 date: 2017-3-9
 ---
 
-###MLE and MAP
+### MLE and MAP
 One most common situation is, we build a model that could produce a probability \\( p(x|\theta) \\) for some observation \\( x \\). 
 The observations are taken as the ground turth in the training phase, and \\( p(x|\theta) \\) is intepertated as the likelihood function of \\( \theta \\).
 
 The maximum likelihood estimation (MLE) is seeking the \\( \theta \\) that maximizes the likelihood function \\( p(x|\theta) \\).
 If we assume a prior distribution \\( p(\theta) \\), the posterior distribution can be computed by \\( p(\theta|x)=p(x|\theta)p(\theta)/p(x) \\) according to the Bayes' theorem,
-since \\( p(x) \\) is independent of \\( \theta \\), optimizing \\( p(\theta|x) )\\ is enquivalent to optimizing \\( p(x|\theta)p(\theta) \\),
+since \\( p(x) \\) is independent of \\( \theta \\), optimizing \\( p(\theta|x) \\) is enquivalent to optimizing \\( p(x|\theta)p(\theta) \\),
 which is known as maximum a posteriori (MAP).
 
-###Bayesian Learning
+### Bayesian Learning
 While the Bayesian learning approach is aimed at computing the whole posterior distribution instead of doing a point estimation.
 The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta )\\, 
 as mentioned in Pattern Recognition and Machine Learning
@@ -33,5 +33,5 @@ so that the posterior can be solved analytically and angain can be used as the p
 Otherwise we would rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
 or the combination of both (e.g. auto-encoding variational Bayes) for an approximation.
 
-###Discussion
+### Discussion
 MLE and MAP are optimization problems, Bayesian Learning is not.
