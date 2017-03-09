@@ -9,7 +9,7 @@ date: 2017-3-9
 ---
 
 ### MLE and MAP
-One most common situation is, we build a model that could produce a probability \\( p(x|\theta) \\) for some observation \\( x \\). 
+One most common situation is, we have a model that could produce a probability \\( p(x|\theta) \\) for some observation \\( x \\). 
 The observations are taken as the ground truth in the training phase, and \\( p(x|\theta) \\) is interpreted as the likelihood function of \\( \theta \\).
 
 The maximum likelihood estimation (MLE) is seeking the \\( \theta \\) that maximizes the likelihood function \\( p(x|\theta) \\).
