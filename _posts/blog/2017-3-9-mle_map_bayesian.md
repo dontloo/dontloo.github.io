@@ -10,7 +10,7 @@ date: 2017-3-9
 
 ### MLE and MAP
 One most common situation is, we have a model that could produce a probability \\( p(x|\theta) \\) for some observation \\( x \\). 
-In the training phase the observations are taken as the ground truth, and \\( p(x|\theta) \\) is interpreted as the likelihood function of \\( \theta \\).
+In the training phase observations are taken as the ground truth, and \\( p(x|\theta) \\) is interpreted as the likelihood function of \\( \theta \\).
 
 The maximum likelihood estimation (MLE) is seeking the \\( \theta \\) that maximizes the likelihood function \\( p(x|\theta) \\).
 If we assume a prior distribution \\( p(\theta) \\), the posterior distribution can be computed by \\( p(\theta|x)=p(x|\theta)p(\theta)/p(x) \\) according to the Bayes' theorem,
