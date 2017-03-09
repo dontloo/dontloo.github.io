@@ -15,7 +15,7 @@ I'm interested in artificial intelligence and machine learning stuff, I have a m
 - *Dimensionality Reduction:* Restricted Boltzmann Machines, (Variational) Auto-encoders, PCA, Linear Discriminant Analysis.
 - *Optimization:* EM, NAG, AdaGrad/ADAM.
 - *Clustering:* Mean-shift, K-means, DBSCAN.
-- *Nearest Neighbor Search:* (Hierarchical) Navigable Small Worlds, ANNOY.
+- *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY.
 - *Others:* Joint Bayesian Verification, Rejection/Importance Sampling, A\* Search, dynamic programming.
 
 **Programming stuff I've dealt with** (ones that I'm still familiar with are marked in bold)  
