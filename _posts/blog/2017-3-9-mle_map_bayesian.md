@@ -29,7 +29,7 @@ and though this is always possible in principle, we often find in practice that 
 so that exact calculation is prohibitively expensive.
 
 Therefore ideally we want \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\),
-so that the posterior can be solved analytically and angain can be used as the prior when the next observation comes in.
+so that the posterior can be solved analytically and again can be used as the prior when the next observation comes in.
 Otherwise we would rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
 or the combination of both (e.g. auto-encoding variational Bayes) for an approximation.
 
