@@ -31,10 +31,9 @@ so that exact calculation is prohibitively expensive.
 Therefore ideally we want \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\),
 so that the posterior can be solved analytically and again can be used as the prior when the next observation comes in.
 For instance say our model follows \\( N(x|f(\theta), \sigma) \\), and we assume a Gaussian prior for \\( \theta \\),
-then the posterior is angain a Gaussian distribution if \\( f(\theta) \\) is linear.
+then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
 
-
-In other cases we would rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
+In other cases we normally rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
 or the combination of both (e.g. auto-encoding variational Bayes) for an approximation.
 
 ### Discussion
