@@ -38,3 +38,5 @@ or the combination of both (e.g. auto-encoding variational Bayes) for an approxi
 
 ### Discussion
 MLE and MAP are optimization problems, Bayesian Learning is not.
+
+Do not be confused with the notion of the discriminative and generative models. In discriminative (\\( p(y|x) \\)) and generative (\\( p(y, x) \\)) models, it assumes the data can be formed as \\(x\\) the input and \\(y\\) the target. While in our discussion, \\(x\\) is the data \\(\theta\\) is the parameter, how we solve for the parameters is independent of which model we choose.
