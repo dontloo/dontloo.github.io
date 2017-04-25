@@ -33,7 +33,7 @@ so that the posterior can be solved analytically and again can be used as the pr
 For instance say the model follows \\( N(x|f(\theta), \sigma) \\), and the prior of \\( \theta \\) is also Gaussian,
 then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
 
-In other cases we normally rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
+In other cases we normally turn to approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
 or the combination of both for an approximation.
 
 ### Discussion
