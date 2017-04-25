@@ -34,9 +34,9 @@ For instance say the model follows \\( N(x|f(\theta), \sigma) \\), and the prior
 then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
 
 In other cases we normally rely on approximate inference (e.g. Laplace approximation) or sampling (e.g. MCMC) 
-or the combination of both (e.g. auto-encoding variational Bayes) for an approximation.
+or the combination of both for an approximation.
 
 ### Discussion
-MLE and MAP are optimization problems, Bayesian Learning is not.  
+MLE and MAP are optimization problems by definition, Bayesian Learning is not.  
 
 Do not be confused with the notion of the discriminative and generative models. In discriminative (\\( p(y\|x) \\)) and generative (\\( p(y, x) \\)) models, it assumes the data can be formed as \\(x\\) the input and \\(y\\) the target. While in our discussion, \\(x\\) is the data \\(\theta\\) is the parameter, how we solve for the parameters is independent of which model we choose.
