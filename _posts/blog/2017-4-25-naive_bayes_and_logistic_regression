@@ -7,3 +7,26 @@ excerpt:
 tags: []
 date: 2017-4-25
 ---
+
+Naive Bayes and logistic regression are two basic machine learning models that are compared frequently, 
+espcially as the generative/discriminative counterpart of one another. 
+However at first sight it seems these two methods are rather different. 
+In naive Bayes we just count the frequencice of features and labels while in linear regression we optimize the parameters with regard to some loss function. 
+If we express theses two models as probablistic graphical models, we'll see excatly how they are related.
+
+As shown in this figure (borrowed from [this tutorial](http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf) without permission),
+the naive Bayes model can be expressed as a directed graph where the parent node denotes the output and the leaf nodes denote the input,
+the joint probability is then 
+\\[p(x, y)=p(y)\prod_n p(x_n|y).\\]
+
+The logistic regression model can be expressed as the undirected counterpart of the naive Bayes model.
+\\[\tilde{p}(x, y)=\phi(y)\prod_n\phi(x_i, y)\\]
+\\[p(y|x)=\frac{1}{z(x)}\tilde{p}(x, y)\\]
+\\[z(x)=\sum_y\tilde{p}(x, y).\\]
+
+In the simplest case for binary classification problems with binary-valued inputs, 
+
+Essentially, a generative model is one that directly describes how
+the outputs probabilistically “generate” the inputs.
+
+not only break down the squential structre of a sentence but each token is inpendent
