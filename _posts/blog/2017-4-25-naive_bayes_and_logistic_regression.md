@@ -43,7 +43,7 @@ Then if follows
 \\[\tilde{p}(x, y=0)=\exp(\sum_n w_i*0+w_0*0)=1\\]
 \\[p(y=1|x)=\frac{1}{z(x)}\tilde{p}(x, y=1)=\sigma(\sum_n w_ix_i+w_0)\\]
 \\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0))=\sigma(\sum_n w_ix_i+w_0)^y(1-\sigma(\sum_n w_ix_i+w_0))^{(1-y)}.\\]
-The MLE for \\(\w\\) can be solved by minimizing the negative log-likelihood (a.k.a the cross-entropy).
+The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a the cross-entropy).
 
 
 
