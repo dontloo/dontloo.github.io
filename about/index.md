@@ -10,9 +10,9 @@ I'm interested in artificial intelligence and machine learning stuff, I have a m
 
 **Algorithms that I have some idea about** 
 
-- *Regression/Classification:* Linear/Logistic Regression, Neural Networks, SVMs.
+- *Regression/Classification:* Linear/Logistic Regression, Naive Bayes, Neural Networks, SVMs.
 - *Sequential Models:* CRFs, HMMs, Particle Filtering.
-- *Dimensionality Reduction:* Restricted Boltzmann Machines, (Variational) Auto-encoders, PCA, Linear Discriminant Analysis.
+- *Dimensionality Reduction:(Variational) Auto-encoders, * Restricted Boltzmann Machines, PCA, Linear Discriminant Analysis.
 - *Optimization:* EM, NAG, AdaGrad/ADAM.
 - *Clustering:* Mean-shift, K-means, DBSCAN.
 - *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY.
@@ -21,7 +21,7 @@ I'm interested in artificial intelligence and machine learning stuff, I have a m
 **Programming stuff I've dealt with** (ones that I'm still familiar with are marked in bold)  
 
 - **Java**, **Python**, **Matlab**, **C/C++**, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
-- *Machine Learning Libs:* **Theano**, **Keras** (contributor), **Caffe**, **Scikit-learn**, SVM-Light, CRF++.
+- *Machine Learning Libs:* **Theano**, **Keras** (contributor), **Pytorch**, **Caffe**, **Scikit-learn**, SVM-Light, CRF++.
 - *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP.
 - *Java Libs/Tools:* Ant, Maven, JUnit, JSP, Spring, Hibernate, MyBatis, J2ME, Lucene.
 - *Python Libs/Tools:*  **Numpy**, **Scipy**, Pandas, Matplotlib, Django.
