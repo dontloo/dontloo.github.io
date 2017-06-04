@@ -11,7 +11,7 @@ date: 2016-11-8
 ### Existing Neural Network Libraries
 There're many brilliant open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface or protocol (e.g. caffe and tensorflow), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it becomes a common need for people in the field to experiment new ideas beyond those encapsulations, often I found that the very interface I need is just the source code, and the very protocol I need is just the programming language.
 
-[Pytorch](http://pytorch.org/) does a great job on that, before I found Keras I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes. It mostly talks about feedforward neural networks (FFNNs), but the idea should be applicable to recurrent networks as well.
+[Pytorch](http://pytorch.org/) does a great job on that, before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes. It mostly talks about feedforward neural networks (FFNNs), but the idea should be applicable to recurrent networks as well.
 
 ### Same Network for Training and Test?
 Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
