@@ -28,7 +28,7 @@ The neural network library I wrote follows the following key points, hopefully i
 
 - The notion of a network breaks down into two types of functions, one is for optimizing an objective function w.r.t some parameters through an optimizer (training), the other computes the output for some input given the parameters (test).
 - Function are defined by stacking up layers.
-- A layer can have its parameter, input and output, it may behave differently for training, test or else (e.g. whether disconnect the gradient or not). 
+- A layer can have its parameter, input and output, it may behave differently for training, test or else (e.g. whether the gradient is disconnected or not). 
 - Parameters are defined independently can be shared between layers and functions.
 
 ### Variational Autoencoder Example
