@@ -34,7 +34,7 @@ The logistic regression model can be expressed as the conditional counterpart of
 In the simplest case where both the input and output are binary values, for the naive Bayes model, 
 both \\(p(y)\\) and \\(p(x_n|y)\\) can be modeled as Bernoulli distributions 
 \\[p(y)=Ber(y|\theta_0)\\]
-\\[p(x_i|y)=Ber(x_i|\theta_i).\\]
+\\[p(x_i|y)=Ber(x_i|\theta_{iy}).\\]
 Then the MLE for \\(\theta\\) coould simply be solved by counting the frequencies.
 
 For the logistic regression model, if we choose the log-linear representation with feature functions as the followings
