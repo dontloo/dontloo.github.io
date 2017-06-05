@@ -16,8 +16,9 @@ In naive Bayes we just count the frequencice of features and labels while in lin
 If we express theses two models as probablistic graphical models, we'll see excatly how they are related.
 
 ### Graphical Models
+![disvsgen](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/gen.png) 
 **naive Bayes**  
-As shown in this figure (borrowed from [this tutorial](http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf) without permission),
+As shown in the figure (borrowed from [this tutorial](http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf) without permission),
 the naive Bayes model can be expressed as a directed graph where the parent node denotes the output and the leaf nodes denote the input,
 the joint probability is then 
 \\[p(x, y)=p(y)\prod_n p(x_i|y).\\]
