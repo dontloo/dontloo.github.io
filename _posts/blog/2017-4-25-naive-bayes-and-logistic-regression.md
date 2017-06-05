@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Naive Bayes and logistic regression"
+title: "Naive Bayes and Logistic Regression"
 modified: 2017-4-25
 categories: blog
 excerpt:
@@ -48,10 +48,10 @@ then it follows
 \\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0)).\\]
 The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a cross-entropy).
 
-In this example, the number of effectifve parameters in $w$ is fewer than $\theta$ as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
+In this example, the number of effectifve parameters in \\(w\\) is fewer than \\(\theta\\) as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
 
 ### Overfitting and Zero Probabilities
-
+The most common problem for MLE is overfitting, for logistic regression it means much higher training accuracy than test accuracy, for naive Bayes it gives zero probabilities for unseen features in one category. The problem is, once zero probability occurs for one feature the final posterior probability will be zero no matter how well other features behave. So smoothing techniques can be introduced to mitigate this, which can be interpreted as a prior assumption.
 
 ### Conditional Independence
 not only break down the squential structre of a sentence but each token is inpendent
