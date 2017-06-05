@@ -18,9 +18,8 @@ since \\( p(x) \\) is independent of \\( \theta \\), optimizing \\( p(\theta|x) 
 which is known as maximum a posteriori (MAP).
 
 ### Bayesian Learning
-While the Bayesian learning approach is aimed at computing the whole posterior distribution instead of doing a point estimation.
-The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), 
-as mentioned in Pattern Recognition and Machine Learning
+The Bayesian learning approach is aimed at computing the entire distribution instead of doing a point estimation.
+The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
 
 >  In the case of continuous variables, the required integrations may not have closed-form analytical solutions, 
 while the dimensionality of the space and the complexity of the integrand may prohibit numerical integration. 
@@ -38,5 +37,7 @@ or the combination of both for an approximation.
 
 ### Discussion
 MLE and MAP are optimization problems by definition, Bayesian Learning is not.  
+
+Bayesian Learning is widely applicable for a whole lot of problems, estimating parameter distributions is just one of them.
 
 Do not be confused with the notion of the discriminative and generative models. In discriminative (\\( p(y\|x) \\)) and generative (\\( p(y, x) \\)) models, it assumes the data can be formed as \\(x\\) the input and \\(y\\) the target. While in our discussion, \\(x\\) is the data \\(\theta\\) is the parameter, how we solve for the parameters is independent of which model we choose.
