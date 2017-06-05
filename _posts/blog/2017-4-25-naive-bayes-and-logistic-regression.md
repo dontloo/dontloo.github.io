@@ -16,14 +16,14 @@ In naive Bayes we just count the frequencice of features and labels while in lin
 If we express theses two models as probablistic graphical models, we'll see excatly how they are related.
 
 ### Graphical Models
-**naive Bayes**
+**naive Bayes**  
 As shown in this figure (borrowed from [this tutorial](http://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf) without permission),
 the naive Bayes model can be expressed as a directed graph where the parent node denotes the output and the leaf nodes denote the input,
 the joint probability is then 
 \\[p(x, y)=p(y)\prod_n p(x_i|y).\\]
 > Essentially, a generative model is one that directly describes how the outputs probabilistically “generate” the inputs.  --the tutorial
 
-**logistic regression**
+**logistic regression**  
 The logistic regression model can be expressed as the conditional counterpart of the naive Bayes model.
 \\[\tilde{p}(x, y)=\psi(y)\prod_n\psi(x_i, y)\\]
 \\[p(y|x)=\frac{1}{z(x)}\tilde{p}(x, y)\\]
@@ -38,15 +38,17 @@ both \\(p(y)\\) and \\(p(x_n|y)\\) can be modeled as Bernoulli distributions
 \\[p(y=1|x)=\frac{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}}{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}+(1-\theta_0)\prod \theta_{0i}^{x_i}(1-\theta_{0i})^{1-x_i}}.\\]
 Then the MLE for \\(\theta\\) coould simply be solved by counting the frequencies.
 
-For the logistic regression model, if we choose the log-linear representation with feature functions as the followings
+For the logistic regression model, we can choose the log-linear representation with feature functions as the followings
 \\[\psi(x_i, y)=\exp(w_i\phi(x_i, y))=\exp(w_i I(x_i=1, y=1))\\]
 \\[\psi(y)=\exp(w_0\phi(y))=\exp(w_0 y)\\]
 then it follows
 \\[\tilde{p}(x, y=1)=\exp(\sum_n w_ix_i+w_0)\\]
 \\[\tilde{p}(x, y=0)=\exp(\sum_n w_i\times 0+w_0\times 0)=1\\]
 \\[p(y=1|x)=\frac{\tilde{p}(x, y=1)}{\tilde{p}(x, y=1)+\tilde{p}(x, y=0)}=\sigma(\sum_n w_ix_i+w_0)\\]
-\\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0))=\sigma(\sum_n w_ix_i+w_0)^y(1-\sigma(\sum_n w_ix_i+w_0))^{1-y}.\\]
+\\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0)).\\]
 The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a cross-entropy).
+
+In this example, the number of effectifve parameters in $w$ is fewer than $\theta$ as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
 
 ### Overfitting and Zero Probabilities
 
