@@ -10,10 +10,10 @@ date: 2017-4-25
 
 ### Introduction
 Naive Bayes and logistic regression are two basic machine learning models that are compared frequently, 
-espcially as the generative/discriminative counterpart of one another. 
+especially as the generative/discriminative counterpart of one another. 
 However at first sight it seems these two methods are rather different. 
-In naive Bayes we just count the frequencice of features and labels while in linear regression we optimize the parameters with regard to some loss function. 
-If we express theses two models as probablistic graphical models, we'll see excatly how they are related.
+In naive Bayes we just count the frequencies of features and labels while in linear regression we optimize the parameters with regard to some loss function. 
+If we express theses two models as probabilistic graphical models, we'll see exactly how they are related.
 
 ### Graphical Models
 ![disvsgen](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/gen.png)  
@@ -38,7 +38,7 @@ both \\(p(y)\\) and \\(p(x_n|y)\\) can be modeled as Bernoulli distributions
 \\[p(y)=Ber(y|\theta_0)\\]
 \\[p(x_i|y)=Ber(x_i|\theta_{yi})\\]
 \\[p(y=1|x)=\frac{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}}{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}+(1-\theta_0)\prod \theta_{0i}^{x_i}(1-\theta_{0i})^{1-x_i}}.\\]
-Then the MLE for \\(\theta\\) coould simply be solved by counting the frequencies.
+Then the MLE for \\(\theta\\) could simply be solved by counting the frequencies.
 
 For the logistic regression model, we can choose the log-linear representation with feature functions as the followings
 \\[\psi(x_i, y)=\exp(w_i\phi(x_i, y))=\exp(w_i I(x_i=1, y=1))\\]
@@ -50,10 +50,11 @@ then it follows
 \\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0)).\\]
 The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a cross-entropy).
 
-In this example, the number of effectifve parameters in \\(w\\) is fewer than \\(\theta\\) as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
+In this example, the number of effective parameters in \\(w\\) is fewer than \\(\theta\\) as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
 
 ### Overfitting and Zero Probabilities
 The most common problem for MLE is overfitting, for logistic regression it means much higher training accuracy than test accuracy, for naive Bayes it gives zero probabilities for unseen features in one category. The problem is, once zero probability occurs for one feature the final posterior probability will be zero no matter how well other features behave. So smoothing techniques can be introduced to mitigate this, which can be interpreted as a prior assumption.
 
 ### Conditional Independence
-not only break down the squential structre of a sentence but each token is inpendent
+Logistic regression is consistent with the naive Bayes assumption that the input \\(x_i\\) are conditionally independent
+given \\(Y\\). But since LR only optimizes the conditional likelihood, it has better performance than NB when the data disobeys the assumption.
