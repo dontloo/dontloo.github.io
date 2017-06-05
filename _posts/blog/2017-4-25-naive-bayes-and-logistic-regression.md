@@ -34,7 +34,8 @@ The logistic regression model can be expressed as the conditional counterpart of
 In the simplest case where both the input and output are binary values, for the naive Bayes model, 
 both \\(p(y)\\) and \\(p(x_n|y)\\) can be modeled as Bernoulli distributions 
 \\[p(y)=Ber(y|\theta_0)\\]
-\\[p(x_i|y)=Ber(x_i|\theta_{iy}).\\]
+\\[p(x_i|y)=Ber(x_i|\theta_{yi})\\]
+\\[p(y=1|x)=\frac{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}}{\theta_0\prod \theta_{1i}^{x_i}(1-\theta_{1i})^{1-x_i}+(1-\theta_0)\prod \theta_{0i}^{x_i}(1-\theta_{0i})^{1-x_i}}.\\]
 Then the MLE for \\(\theta\\) coould simply be solved by counting the frequencies.
 
 For the logistic regression model, if we choose the log-linear representation with feature functions as the followings
@@ -44,7 +45,7 @@ then it follows
 \\[\tilde{p}(x, y=1)=\exp(\sum_n w_ix_i+w_0)\\]
 \\[\tilde{p}(x, y=0)=\exp(\sum_n w_i\times 0+w_0\times 0)=1\\]
 \\[p(y=1|x)=\frac{\tilde{p}(x, y=1)}{\tilde{p}(x, y=1)+\tilde{p}(x, y=0)}=\sigma(\sum_n w_ix_i+w_0)\\]
-\\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0))=\sigma(\sum_n w_ix_i+w_0)^y(1-\sigma(\sum_n w_ix_i+w_0))^{(1-y)}.\\]
+\\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0))=\sigma(\sum_n w_ix_i+w_0)^y(1-\sigma(\sum_n w_ix_i+w_0))^{1-y}.\\]
 The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a cross-entropy).
 
 ### Overfitting and Zero Probabilities
