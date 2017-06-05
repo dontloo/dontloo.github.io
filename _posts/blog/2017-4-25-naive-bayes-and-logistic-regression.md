@@ -45,7 +45,7 @@ then it follows
 \\[\tilde{p}(x, y=0)=\exp(\sum_n w_i\times 0+w_0\times 0)=1\\]
 \\[p(y=1|x)=\frac{\tilde{p}(x, y=1)}{\tilde{p}(x, y=1)+\tilde{p}(x, y=0)}=\sigma(\sum_n w_ix_i+w_0)\\]
 \\[p(y|x)=Ber(y|\sigma(\sum_n w_ix_i+w_0))=\sigma(\sum_n w_ix_i+w_0)^y(1-\sigma(\sum_n w_ix_i+w_0))^{(1-y)}.\\]
-The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a the cross-entropy).
+The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a cross-entropy).
 
 ### Overfitting and Zero Probabilities
 
