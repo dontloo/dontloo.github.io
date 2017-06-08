@@ -11,7 +11,7 @@ I'm interested in artificial intelligence and machine learning stuff, I have a m
 **Algorithms that I have some idea about** 
 
 - *Regression/Classification:* Linear/Logistic Regression, Naive Bayes, Neural Networks, SVMs.
-- *Sequential Models:* CRFs, HMMs, Particle Filtering.
+- *Sequential Models:* CRFs, HMMs, Particle Filtering, Kalman filtering.
 - *Dimensionality Reduction:* (Variational) Auto-encoders, Restricted Boltzmann Machines, PCA, Linear Discriminant Analysis.
 - *Optimization:* EM, NAG, AdaGrad/ADAM.
 - *Clustering:* Mean-shift, K-means, DBSCAN.
