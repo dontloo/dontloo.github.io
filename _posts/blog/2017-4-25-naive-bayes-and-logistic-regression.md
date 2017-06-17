@@ -23,7 +23,6 @@ As shown in the figure (borrowed from [this tutorial](http://people.cs.umass.edu
 the naive Bayes model can be expressed as a directed graph where the parent node denotes the output and the leaf nodes denote the input,
 the joint probability is then 
 \\[p(x, y)=p(y)\prod_n p(x_i|y).\\]
-> Essentially, a generative model is one that directly describes how the outputs probabilistically “generate” the inputs.  --the tutorial
 
 **logistic regression**  
 The logistic regression model can be expressed as the conditional counterpart of the naive Bayes model.
