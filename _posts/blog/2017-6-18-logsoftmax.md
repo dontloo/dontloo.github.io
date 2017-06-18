@@ -16,7 +16,7 @@ where \\(y_k\\) is the output of the neural network and \\(a_k\\) the activation
 In practice, many popular frameworks will instead make \\(a_k\\) the output of the network and move softmax into the loss function. Because the loss function can further be derived as 
 \\[\log p_\theta(t|x) = \sum t_k\log \frac{\exp(a_k)}{\sum\exp(a_j)} = \sum t_k (a_k - \log\sum\exp(a_j)),\\]
 where \\(\log\sum\exp\\) can be implemented as [LogSumExp](https://en.wikipedia.org/wiki/LogSumExp) to prevent numerical under/overflow.
-On the other hand if we explicitly compute the results of \\(y_k\\), we'll often need to clip the value to avoid *Nan*s,
+On the other hand if we explicitly compute the results of \\(y_k\\), we'll often need to clip its value to avoid *Nan*s,
 which will also lead to inaccurate gradients.
 
 The operation of computing \\(a_k - \log\sum\exp(a_j)\\) is called the LogSoftMax.
