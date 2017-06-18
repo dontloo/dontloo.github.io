@@ -9,7 +9,7 @@ date: 2017-6-18
 modified: 2017-6-18
 ---
 
-For a neural network classifier with cross-entropy loss and softmax in the output layer, if follows 
+For a neural network classifier with cross-entropy loss and softmax in the output layer, it follows 
 \\[\log p_\theta(t|x)=\sum t_k\log y_k = \sum t_k\log \frac{\exp(a_k)}{\sum\exp(a_j)},\\]
 where \\(y_k\\) is the output of the neural network and \\(a_k\\) the activation of the output layer.
 
