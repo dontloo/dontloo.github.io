@@ -19,4 +19,4 @@ where \\(\log\sum\exp\\) can be implemented as [LogSumExp](https://en.wikipedia.
 On the other hand if we explicitly compute the results of \\(y_k\\), we'll often need to clip its value to avoid *Nan*s,
 which will also lead to inaccurate gradients.
 
-The operation of computing \\(a_k - \log\sum\exp(a_j)\\) is called the LogSoftMax.
+The operation of computing \\(a_k - \log\sum\exp(a_j)\\) is called the *LogSoftMax*.
