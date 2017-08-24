@@ -10,13 +10,13 @@ date: 2017-8-23
 
 At the time of writing, [Cortana](https://developer.microsoft.com/en-us/cortana) supports two ways of creating a skill as shown [here](https://developer.microsoft.com/en-us/cortana/dashboard#!/home).
 
-The first option (based on Dorado) is sitll in its alpha version, which seems only applicable for Microsoft employees at the current stage. 
+The first option (based on Dorado) is still in its alpha version, which seems only applicable for Microsoft employees at the current stage. 
 It provides a unified platform for building and managing Cortana skills, here's a neat [introduction video](https://microsoft.sharepoint.com/:v:/r/teams/CortanaSkillsKitUpdatesSupportInternal/_layouts/15/guestaccess.aspx?share=EQ9jKaQoIoBAllnGiODg6SYBNLGkxR7fuejMm-Uzt2vRYA)
 and [slides](https://microsoft.sharepoint.com/:b:/r/teams/CortanaSkillsKitUpdatesSupportInternal/_layouts/15/guestaccess.aspx?share=EQ1Hn9u9AjZFuJhn_N3MzcwBD_pjs55A8eusS8DClMUDag)
-which are also only available to Microsoft emplyees.
+which are also only available to Microsoft employees.
 
-The second option (based on [Bot Framework](https://dev.botframework.com/)) is publically avaiable, together with its [introduction vedio](https://channel9.msdn.com/Events/Build/2017/B8031).
-However in practice there could be many pitfalls for someone starting from scrach. This walkhtrough will guide you step by step to create a simple Cortana skill.
+The second option (based on [Bot Framework](https://dev.botframework.com/)) is publically available, together with its [introduction video](https://channel9.msdn.com/Events/Build/2017/B8031).
+However in practice there could be many pitfalls for someone starting from scratch. This walkthrough will guide you step by step to create a simple Cortana skill.
 
 As discribed in the [official document](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/creating-a-bot-based-skill), the major steps are as follows.
 >
@@ -29,6 +29,9 @@ As discribed in the [official document](https://docs.microsoft.com/en-us/cortana
 7. Publish your Cortana skill.
 
 We'll walk through each step in details.
+
+**0. Set up your Cortana skills development environment.**
+The first thing to do is make sure you have access to all the resources listed in [this article](https://docs.microsoft.com/en-us/cortana/tutorials/setup-dev-env). Note that the Microsoft account (MSA) required for Cortana and LUIS registration can not be the `yourname@microsfot.com` account for Microsoft employees.
 
 **1. Build or reuse an existing bot using the latest BotBuilder SDK.**
 
@@ -67,4 +70,5 @@ If you're using the Bot Builder SDK for .NET, set the following key values in th
 * MicrosoftAppPassword
 
 **6. & 7. Add your bot to the Cortana Channel. Publish your Cortana skill.**
-Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel).
+
+Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Now you'll be able to try out the Cortana skill you've just built, make sure the Cortana on your system is logged in with the same account you used for development.
