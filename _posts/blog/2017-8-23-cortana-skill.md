@@ -51,6 +51,20 @@ Adding these information to the bot you've created in step 1 like [this](https:/
 See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill).
 
 **4. Deploy your bot to Azure.**
-See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-visual-studio), remember to configurate the `web.config` file after deployment.
+
+See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-visual-studio).
 
 **5. Register your bot with the Bot Framework.**
+
+See [here](https://docs.microsoft.com/en-us/bot-framework/portal-register-bot) on how to register your bot with the Bot framework, after registeration, remember to configurate the `web.config` file.
+
+>
+If you're using the Bot Builder SDK for Node.js, set the following environment variables:
+* MICROSOFT_APP_ID
+* MICROSOFT_APP_PASSWORD
+If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
+* MicrosoftAppId
+* MicrosoftAppPassword
+
+**6. Add your bot to the Cortana Channel. & 7. Publish your Cortana skill.**
+Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel).
