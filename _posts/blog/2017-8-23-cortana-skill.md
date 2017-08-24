@@ -31,6 +31,7 @@ As discribed in the [official document](https://docs.microsoft.com/en-us/cortana
 We'll walk through each step in details.
 
 **0. Set up your Cortana skills development environment.**
+
 The first thing to do is make sure you have access to all the resources listed in [this article](https://docs.microsoft.com/en-us/cortana/tutorials/setup-dev-env). Note that the Microsoft account (MSA) required for Cortana and LUIS registration can not be the `yourname@microsfot.com` account for Microsoft employees.
 
 **1. Build or reuse an existing bot using the latest BotBuilder SDK.**
@@ -72,3 +73,5 @@ If you're using the Bot Builder SDK for .NET, set the following key values in th
 **6. & 7. Add your bot to the Cortana Channel. Publish your Cortana skill.**
 
 Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Now you'll be able to try out the Cortana skill you've just built, make sure the Cortana on your system is logged in with the same account you used for development.
+
+Have fun!
