@@ -66,5 +66,5 @@ If you're using the Bot Builder SDK for .NET, set the following key values in th
 * MicrosoftAppId
 * MicrosoftAppPassword
 
-**6. Add your bot to the Cortana Channel. & 7. Publish your Cortana skill.**
+**6. & 7. Add your bot to the Cortana Channel. Publish your Cortana skill.**
 Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel).
