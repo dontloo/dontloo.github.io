@@ -16,14 +16,14 @@ The second option (based on [Bot Framework](https://dev.botframework.com/)) is p
 However in practice there could be many pitfalls for someone starting from scratch. This walkthrough will guide you step by step to create a simple Cortana skill.
 
 As discribed in the [official document](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/creating-a-bot-based-skill), the major steps are as follows.
->
-1. Build or reuse an existing bot using the latest BotBuilder SDK.
-2. Use LUIS.ai in your bot if you need natural language understanding capabilities in your bot.
-3. Use the new speech functionalities in the BotBuilder SDK to give your bot a voice.
-4. Deploy your bot to Azure.
-5. Register your bot with the Bot Framework.
-6. Add your bot to the Cortana Channel.
-7. Publish your Cortana skill.
+
+> 1. Build or reuse an existing bot using the latest BotBuilder SDK.
+> 2. Use LUIS.ai in your bot if you need natural language understanding capabilities in your bot.
+> 3. Use the new speech functionalities in the BotBuilder SDK to give your bot a voice.
+> 4. Deploy your bot to Azure.
+> 5. Register your bot with the Bot Framework.
+> 6. Add your bot to the Cortana Channel.
+> 7. Publish your Cortana skill.
 
 We'll walk through each step in details.
 
