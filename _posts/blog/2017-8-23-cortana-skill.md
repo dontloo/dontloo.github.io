@@ -51,7 +51,7 @@ Adding these information to the bot you've created in step 1 like [this](https:/
 
 **3. Use the new speech functionalities in the BotBuilder SDK to give your bot a voice.**
 
-See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill).
+See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill). Also in align with the above mentioned LUIS example, we can also use `context.SayAsync(text, speech)` instead of `context.PostAsync(text)` to add speech to your bot.
 
 **4. Deploy your bot to Azure.**
 
