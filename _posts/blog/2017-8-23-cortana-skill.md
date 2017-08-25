@@ -10,10 +10,7 @@ date: 2017-8-23
 
 At the time of writing, [Cortana](https://developer.microsoft.com/en-us/cortana) supports two ways of creating a skill as shown [here](https://developer.microsoft.com/en-us/cortana/dashboard#!/home).
 
-The first option (based on Dorado) is still in its alpha version, which seems only applicable for Microsoft employees at the current stage. 
-It provides a unified platform for building and managing Cortana skills, here's a neat [introduction video](https://microsoft.sharepoint.com/:v:/r/teams/CortanaSkillsKitUpdatesSupportInternal/_layouts/15/guestaccess.aspx?share=EQ9jKaQoIoBAllnGiODg6SYBNLGkxR7fuejMm-Uzt2vRYA)
-and [slides](https://microsoft.sharepoint.com/:b:/r/teams/CortanaSkillsKitUpdatesSupportInternal/_layouts/15/guestaccess.aspx?share=EQ1Hn9u9AjZFuJhn_N3MzcwBD_pjs55A8eusS8DClMUDag)
-which are also only available to Microsoft employees.
+The first option (based on Dorado) is still in its alpha version, you'll need to send your Microsoft account (MSA) to `mksadmins@microsoft.com` to get approved. It provides a unified platform for building and managing Cortana skills, but less control on implementation details.
 
 The second option (based on [Bot Framework](https://dev.botframework.com/)) is publically available, together with its [introduction video](https://channel9.msdn.com/Events/Build/2017/B8031).
 However in practice there could be many pitfalls for someone starting from scratch. This walkthrough will guide you step by step to create a simple Cortana skill.
