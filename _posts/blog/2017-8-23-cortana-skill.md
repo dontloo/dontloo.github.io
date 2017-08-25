@@ -61,17 +61,17 @@ See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-vi
 
 See [here](https://docs.microsoft.com/en-us/bot-framework/portal-register-bot) on how to register your bot with the Bot framework, after registeration, remember to configurate the `web.config` file.
 
->
-If you're using the Bot Builder SDK for Node.js, set the following environment variables:
-* MICROSOFT_APP_ID
-* MICROSOFT_APP_PASSWORD
-If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
-* MicrosoftAppId
-* MicrosoftAppPassword
+> If you're using the Bot Builder SDK for Node.js, set the following environment variables:
+> * MICROSOFT_APP_ID
+> * MICROSOFT_APP_PASSWORD
+> 
+> If you're using the Bot Builder SDK for .NET, set the following key values in the web.config file:
+> * MicrosoftAppId
+> * MicrosoftAppPassword
 
 **6. & 7. Add your bot to the Cortana Channel. Publish your Cortana skill.**
 
-Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Beware of the [known issues](https://docs.microsoft.com/en-us/cortana/testing/known-issues). In particular the "LuisDialog fails on skill Launch" issue described in [this question](https://stackoverflow.com/q/45860583/3041068).
+Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Beware of the [known issues](https://docs.microsoft.com/en-us/cortana/testing/known-issues), in particular the "LuisDialog fails on skill Launch" issue described in [this question](https://stackoverflow.com/q/45860583/3041068).
 
 Now you'll be able to try out the Cortana skill you've just built, make sure the Cortana on your system is logged in with the same account you used for development.
 
