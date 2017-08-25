@@ -50,13 +50,9 @@ Adding these information to the bot you've created in step 1 like [this](https:/
 
 See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-cortana-skill). Also in align with the above mentioned LUIS example, we can also use `context.SayAsync(text, speech)` instead of `context.PostAsync(text)` to add speech to your bot.
 
-**4. Deploy your bot to Azure.**
+**4. & 5. Deploy your bot to Azure. Register your bot with the Bot Framework.**
 
-See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-visual-studio).
-
-**5. Register your bot with the Bot Framework.**
-
-See [here](https://docs.microsoft.com/en-us/bot-framework/portal-register-bot) on how to register your bot with the Bot framework, after registeration, remember to configurate the `web.config` file.
+See [this tutorial](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-overview) and [here](https://docs.microsoft.com/en-us/bot-framework/portal-register-bot) on how to deply and register your bot, after registeration, remember to configurate the `web.config` file as follows.
 
 > If you're using the Bot Builder SDK for Node.js, set the following environment variables:
 > * MICROSOFT_APP_ID
