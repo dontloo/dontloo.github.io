@@ -64,7 +64,7 @@ See [here](https://docs.microsoft.com/en-us/bot-framework/deploy-bot-overview) a
 
 **6. & 7. Add your bot to the Cortana Channel. Publish your Cortana skill.**
 
-Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Beware of the [known issues](https://docs.microsoft.com/en-us/cortana/testing/known-issues), in particular the "LuisDialog fails on skill Launch" issue described in [this question](https://stackoverflow.com/q/45860583/3041068).
+Step 6 and 7 are trivial, see [this turorial](https://docs.microsoft.com/en-us/cortana/tutorials/bot-skills/add-bot-to-cortana-channel). Beware of these [known issues](https://docs.microsoft.com/en-us/cortana/testing/known-issues), in particular the "LuisDialog fails on skill Launch" issue described in [this question](https://stackoverflow.com/q/45860583/3041068).
 
 Now you'll be able to try out the Cortana skill you've just built, make sure the Cortana on your system is logged in with the same account you used for development.
 
