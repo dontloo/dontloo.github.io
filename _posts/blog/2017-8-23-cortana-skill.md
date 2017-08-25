@@ -43,7 +43,7 @@ Following the instructions [here](https://docs.microsoft.com/en-us/bot-framework
 
 [LUIS.ai](https://www.luis.ai) is a language understanding framework that can work with Bot Framework.
 Following [this](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-get-started-create-app) toturial you will be able to create a LUIS applicaiton.
-In the simplest case, you don't need to add any intents or entities, then if Luis cannot recognize an intent, will return an empty string, see [this question](https://stackoverflow.com/q/41392366/3041068). 
+It's not necessary to add an intent or entitie to make your LUIS model work, if Luis cannot recognize an intent, it will return an empty string for your bot to handle, see [this question](https://stackoverflow.com/q/41392366/3041068). 
 
 After you've successfully created an application, you can see the [application ID](https://www.luis.ai/applications) and [keys](https://www.luis.ai/keys).
 Adding these information to the bot you've created in step 1 like [this](https://github.com/Microsoft/BotBuilder-Samples/blob/master/CSharp/intelligence-LUIS/Dialogs/RootLuisDialog.cs#L14), your bot will be able to exploit LUIS features.
