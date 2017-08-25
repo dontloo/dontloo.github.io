@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cortana Skill Walkthrough"
+title: "Cortana Skills Walkthrough"
 modified: 2017-8-23
 categories: blog
 excerpt:
