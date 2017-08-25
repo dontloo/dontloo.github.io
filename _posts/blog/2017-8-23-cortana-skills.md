@@ -8,7 +8,7 @@ tags: []
 date: 2017-8-23
 ---
 
-At the time of writing, [Cortana](https://developer.microsoft.com/en-us/cortana) supports two ways of creating a skill as shown [here](https://developer.microsoft.com/en-us/cortana/dashboard#!/home).
+At the time of writing, [Cortana](https://developer.microsoft.com/en-us/cortana) supports two ways of creating skills as shown [here](https://developer.microsoft.com/en-us/cortana/dashboard#!/home).
 
 The first option (based on Dorado) is still in its alpha version, you'll need to send your Microsoft account (MSA) to `mksadmins@microsoft.com` to get approved. It provides a unified platform for building and managing Cortana skills, but less control on implementation details.
 
