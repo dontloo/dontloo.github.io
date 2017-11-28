@@ -20,7 +20,7 @@ If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be furthe
 
 ### Posterior Probability
 In many other cases we care more about the entire posterior distribution \\( p(\theta|x) \\) instead of doing a point estimation (\\( argmax \\)).
-The difficulty of computing the posterior often arises in computing the denominator \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
+The difficulty of computing the posterior often arises in computing the marginal \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
 
 >  In the case of continuous variables, the required integrations may not have closed-form analytical solutions, 
 while the dimensionality of the space and the complexity of the integrand may prohibit numerical integration. 
