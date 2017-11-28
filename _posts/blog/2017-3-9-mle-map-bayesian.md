@@ -12,11 +12,11 @@ date: 2017-3-9
 One most common situation is, we have a model that could produce a probability \\( p(x|\theta) \\) for some observation \\( x \\). 
 In the training phase observations are taken as the ground truth, and \\( p(x|\theta) \\) is interpreted as the likelihood function of \\( \theta \\).
 
-We are often interested in the most probable \\( \theta \\) given the data, i.e.  \\( \theta* = argmax_\theta p(\theta|x) \\).
-Applying the Bayes' rule, \\( \theta* = argmax_\theta p(x|\theta)p(\theta)/p(x). \\)
+We are often interested in the most probable \\( \theta \\) given the data, i.e.  \\( \theta^* = argmax_\theta p(\theta|x) \\).
+Applying the Bayes' rule, \\( \theta^* = argmax_\theta p(x|\theta)p(\theta)/p(x). \\)
 Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outcome of the \\( argmax \\) operation, we got 
-\\( \theta* = argmax_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
-If we assume a uniform (uninformative) prior distribution \\( p(\theta) \\), if can be further reduced to \\( \theta* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
+\\( \theta** = argmax_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
+If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
 
 ### Bayesian Learning
 The Bayesian learning approach is aimed at computing the entire distribution instead of doing a point estimation.
