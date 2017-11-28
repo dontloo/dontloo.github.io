@@ -36,6 +36,6 @@ In other cases we normally turn to approximate inference (e.g. Laplace approxima
 or the combination of both for an approximation.
 
 ### Discussion
-MLE and MAP are optimization problems by definition, while computing the posterior is not.  
+MLE and MAP are optimization problems by definition, while estimating the posterior is not.  
 
 Do not be confused with the notion of the discriminative and generative models. In discriminative (\\( p(y\|x) \\)) and generative (\\( p(y, x) \\)) models, it assumes the data can be formed as \\(x\\) the input and \\(y\\) the target. While in our discussion, \\(x\\) is the data \\(\theta\\) is the parameter, how we solve for the parameters is independent of which model we choose.
