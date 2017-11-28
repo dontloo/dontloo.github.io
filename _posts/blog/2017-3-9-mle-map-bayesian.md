@@ -15,7 +15,7 @@ In the training phase observations are taken as the ground truth, and \\( p(x|\t
 We are often interested in the most probable \\( \theta \\) given the data, i.e.  \\( \theta^* = argmax_\theta p(\theta|x) \\).
 Applying the Bayes' rule, \\( \theta^* = argmax_\theta p(x|\theta)p(\theta)/p(x). \\)
 Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outcome of the \\( argmax \\) operation, we got 
-\\( \theta** = argmax_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
+\\( \theta^* = argmax_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
 If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
 
 ### Bayesian Learning
