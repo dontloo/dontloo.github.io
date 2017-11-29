@@ -19,7 +19,7 @@ Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outco
 If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
 
 ### Posterior Probability
-In many other cases we care more about the entire posterior distribution \\( p(\theta|x) \\) instead of doing a point estimation (\\( argmax \\)).
+In many other cases we care more about the entire posterior distribution \\( p(\theta|x) \\) instead of a point estimation (\\( argmax \\)).
 The difficulty of computing the posterior often arises in computing the marginal \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
 
 >  In the case of continuous variables, the required integrations may not have closed-form analytical solutions, 
