@@ -56,4 +56,4 @@ The most common problem for MLE is overfitting, for logistic regression it means
 
 ### Conditional Independence
 Logistic regression is consistent with the naive Bayes assumption that the input \\(x_i\\) are conditionally independent
-given \\(Y\\). But since LR only optimizes the conditional likelihood, it has better performance than NB when the data disobeys the assumption.
+given \\(Y\\). Nevertheless unlike NB (which models every \\(p(x_i|y)\\) separately), LR only optimizes for the conditional likelihood, it has better performance than NB when the data disobeys the assumption (e.g. when two features are highly correlated).
