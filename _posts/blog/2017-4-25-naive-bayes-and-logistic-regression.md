@@ -52,7 +52,7 @@ The MLE for \\(w\\) can be done by minimizing the negative log-likelihood (a.k.a
 In this example, the number of effective parameters in \\(w\\) is fewer than \\(\theta\\) as it only models the conditional probability (we can always only parameterize n-1 out of n categories then the probability of the remaining category can be inferred as they sum up to one). 
 
 ### Overfitting and Zero Probabilities
-The most common problem for MLE is overfitting, for logistic regression it means much higher training accuracy than test accuracy, for naive Bayes it gives zero probabilities for unseen features in one category. The problem is, once zero probability occurs for one feature the final posterior probability will be zero no matter how well other features behave. So smoothing techniques can be introduced to mitigate this, which can be interpreted as a prior assumption.
+The most common problem for MLE is overfitting, for naive Bayes it can lead to zero probabilities for unseen data. Smoothing techniques are often used to mitigate this, which can be interpreted as a prior assumption.
 
 ### Conditional Independence
 Logistic regression is consistent with the naive Bayes assumption that the input \\(x_i\\) are conditionally independent
