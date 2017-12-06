@@ -23,8 +23,7 @@ In many other cases we care more about the entire posterior distribution \\( p(\
 ![bayesian](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/bayesian.png)  
 There's very neat introduction on Coursera, [Bayesian approach to statistics](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/lecture/wTqJf/bayesian-approach-to-statistics).  
 
-The difficulty of computing the posterior often arises in computing the marginal \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
-
+The difficulty of the Bayesian approach often arises in computing the marginal \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
 >  In the case of continuous variables, the required integrations may not have closed-form analytical solutions, 
 while the dimensionality of the space and the complexity of the integrand may prohibit numerical integration. 
 For discrete variables, the marginalizations involve summing over all possible configurations of the hidden variables, 
