@@ -19,7 +19,7 @@ Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outco
 If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
 
 ### Posterior Probability
-In many other cases we care more about the entire posterior distribution \\( p(\theta|x) \\) instead of a point estimation (\\( argmax \\)). These two approaches (point estimation and posterior probability) are derived from the Frequentist v.s. Bayesian approaches in Statistics. There's very neat introduction it, [Bayesian approach to statistics](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/lecture/wTqJf/bayesian-approach-to-statistics).  
+In many other cases we care more about the entire posterior distribution \\( p(\theta|x) \\) instead of a point estimation (\\( argmax \\)). These two approaches (point estimation and posterior probability) are derived from the Frequentist v.s. Bayesian approaches in Statistics. There's very neat introduction on Coursera, [Bayesian approach to statistics](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/lecture/wTqJf/bayesian-approach-to-statistics).  
 ![bayesian](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/bayesian.png)
 
 The difficulty of computing the posterior often arises in computing the marginal \\( p(x) = \int p(x|\theta)p(\theta) d\theta \\), as mentioned in Pattern Recognition and Machine Learning
