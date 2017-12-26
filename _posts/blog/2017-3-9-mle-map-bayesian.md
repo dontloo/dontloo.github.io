@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MLE, MAP and Posterior Probability"
+title: "MLE, MAP and Bayesian Methods"
 modified: 2017-3-9
 categories: blog
 excerpt:
