@@ -123,7 +123,10 @@ S_{\mu} & S_{\mu}+S_{\epsilon} & \dots & S_{\mu} \\\
 S_{\mu} & S_{\mu} & ... & S_{\mu}+S_{\epsilon}
 \end{matrix}\right]\\]
 ref: [Linear combinations of normal random variables](https://www.statlect.com/probability-distributions/normal-distribution-linear-combinations).  
+More details can be found in [this question](https://www.zhihu.com/question/28086678) on zhihu.
+<!---
 \\[\mathbf{h}=P^\dagger\mathbf{x}=P^\dagger\Sigma_x\Sigma^{-1}_x\mathbf{x}=P^\dagger P\Sigma_hP^T\Sigma^{-1}_x\mathbf{x}=\Sigma_hP^T\Sigma^{-1}_x\mathbf{x}\\]
+-->
 
 ### Discussion  
 Why don't we just solve \\(\mathbf{h}=P^{\dagger}\mathbf{x}\\) directly instead of rewriting it in terms of \\(S_{\mu}\\) and \\(S_{\epsilon}\\)? 
