@@ -31,11 +31,9 @@ For discrete variables, the marginalizations involve summing over all possible c
 and though this is always possible in principle, we often find in practice that there may be exponentially many hidden states 
 so that exact calculation is prohibitively expensive.
 
-Therefore ideally we would like \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\), so that the posterior can be solved analytically and furthermore can be used again as the prior for subsequent analyses.
-For instance say the model follows \\( N(x|f(\theta), \sigma) \\), and the prior of \\( \theta \\) is also Gaussian,
-then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
+Ideally we would like \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\), so that the posterior can be solved analytically and furthermore can be used again as the prior for subsequent analyses. For instance say the model follows \\( N(x|f(\theta), \sigma) \\), and the prior of \\( \theta \\) is also Gaussian, then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
 
-In other cases we normally turn to variational methods or sampling(for expectations) or the combination of both for approximation.
+Conjugate prior-likelihood pairs often allow the marginal \\( p(x) \\) to be expressed in closed form. In other cases we normally turn to variational methods or sampling(for expectations) or the combination of both for approximation.
 
 ### Discussion
 Do not be confused with the notion of the discriminative and generative models. In discriminative (\\( p(y\|x) \\)) and generative (\\( p(y, x) \\)) models, it assumes the data can be formed as \\(x\\) the input and \\(y\\) the target. While in our discussion, \\(x\\) is the data \\(\theta\\) is the parameter, how we solve for the parameters is independent of which model we choose.
