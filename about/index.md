@@ -20,7 +20,7 @@ modified: 2014-10-08
 
 - **Java**, **Python**, Matlab, C/C++, Haskell, Excel VBA, Ruby, C#, AWK, Lisp, JavaScript, SQL, HTML/CSS, **Markdown**, **Latex**.
 - *Machine Learning Libs:* Theano, Keras (contributor), Pytorch, Caffe, Scikit-learn, SVM-Light, CRF++.
-- *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP.
+- *Computer Vision & NLP Libs:* VLFeat, OpenCV, Dlib, OpenNLP, Gensim.
 - *Java Libs/Tools:* Ant, Maven, JUnit, JSP, Spring, Hibernate, MyBatis, J2ME, Lucene.
 - *Python Libs/Tools:*  **Numpy**, **Scipy**, Pandas, Matplotlib, Django.
 - *C/C++ Libs/Tools:* CMake, Boost, Qt, libpcap/WinPcap, Flex & Bison/Lex & Yacc.
