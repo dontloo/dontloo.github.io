@@ -17,5 +17,5 @@ Mostly the normalization does something like \\(y_k = \hat{y_k}/\sum \hat{y_j}\\
 \\(p_\theta(t_k|x) = y_k = \hat{y_k}/\sum \hat{y_j} = p_\theta(t_k,x)/p_\theta(x) \\), 
 which is just the Bayes rule.
 
-Since we have the joint probability defined, it seems nice to optimize the joint likelihood instead of the conditional likelihood to acquire a generative model. The problem is the joint likelihood \\(p_\theta(t_k,x)\\) is often unbounded,
-a MLE model will simply output a maximum value regardless of the input. Indeed it would work if we introduce some constraints to the model to address this.
+Since we have the joint probability defined, it seems nice to optimize the joint likelihood instead of the conditional likelihood to acquire a generative model. The problem is, the joint likelihood \\(p_\theta(t_k,x)\\) is often unbounded when \\(x\\) is continuous,
+then an MLE model will simply output a maximum value regardless of the input. Indeed it would work if we introduce some constraints to the model to address this.
