@@ -31,7 +31,7 @@ For discrete variables, the marginalizations involve summing over all possible c
 and though this is always possible in principle, we often find in practice that there may be exponentially many hidden states 
 so that exact calculation is prohibitively expensive.
 
-Ideally we would like \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x|\theta) \\), so that the posterior can be solved analytically and furthermore can be used again as the prior for subsequent analyses. For instance say the model follows \\( N(x|f(\theta), \sigma) \\), and the prior of \\( \theta \\) is also Gaussian, then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
+Ideally we would like \\( p(\theta) \\) to be the [conjugate prior](https://en.wikipedia.org/wiki/Conjugate_prior) of the likelihood function \\( p(x\|\theta) \\), so that the posterior can be solved analytically and furthermore can be used again as the prior for subsequent analyses. For instance say the model follows \\( N(x\|f(\theta), \sigma) \\), and the prior of \\( \theta \\) is also Gaussian, then the posterior would be another Gaussian distribution if \\( f(\theta) \\) is linear.
 
 Conjugate prior-likelihood pairs often allow the marginal \\( p(x) \\) to be expressed in closed form. In other cases we normally turn to variational methods or sampling or the combination of both for approximation.
 
