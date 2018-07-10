@@ -9,17 +9,17 @@ date: 2017-3-9
 ---
 
 ### MLE and MAP
-One most common situation is, we have a model that could produce the (unnormalized) probability \\( p(x|\theta) \\) for some observation \\( x \\). We are often interested in the most probable \\( \theta \\) given the data, i.e.  \\( \theta^* = argmax_\theta p(\theta|x) \\).  
+One most common situation is, we have a model that could produce the (unnormalized) probability \\( p(x|\theta) \\) for some observation \\( x \\). We are often interested in the most probable \\( \theta \\) given the data, i.e.  \\( \theta^* = \arg\max_\theta p(\theta|x) \\).  
 
-Applying the Bayes' rule, \\( \theta^* = argmax_\theta p(x|\theta)p(\theta)/p(x). \\)
-Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outcome of the \\( argmax \\) operation, we got 
-\\( \theta^* = argmax_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
-If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = argmax_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
+Applying the Bayes' rule, \\( \theta^* = \arg\max_\theta p(x|\theta)p(\theta)/p(x). \\)
+Since \\( p(x) \\) is independent of \\( \theta \\), it doesn't affect the outcome of the \\( \arg\max \\) operation, we got 
+\\( \theta^* = \arg\max_\theta p(x|\theta)p(\theta) \\), which is known as maximum a posteriori (MAP).
+If we assume a uniform (uninformative) prior \\( p(\theta) \\), if can be further reduced to just \\( \theta^* = \arg\max_\theta p(x|\theta) \\), which is known as maximum likelihood estimation (MLE).
 
 ### Bayesian Methods
-Sometimes we care more about the entire posterior distribution \\( p(\theta|x) \\) rather than a point estimation (\\( argmax \\)), in which case \\(\theta\\) is treated as a (latent) random variable insteand of a parameter.  
+Sometimes we care more about the entire posterior distribution \\( p(\theta|x) \\) rather than a point estimation (\\( \arg\max \\)), in which case \\(\theta\\) is treated as a (latent) random variable insteand of a parameter.  
 
-These two approaches (point estimation and posterior distribution) are derived from the Frequentist v.s. Bayesian approaches in Statistics respectively. There's very neat introduction on Coursera, [Bayesian approach to statistics](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/lecture/wTqJf/bayesian-approach-to-statistics).  
+These two approaches (point estimation and posterior distribution) are derived from the Frequentist v.s. Bayesian views of Statistics respectively. There's a neat introduction on Coursera, [Bayesian approach to statistics](https://www.coursera.org/learn/bayesian-methods-in-machine-learning/lecture/wTqJf/bayesian-approach-to-statistics).  
 ![bayesian](https://raw.githubusercontent.com/dontloo/dontloo.github.io/master/images/bayesian.png)  
 
 
