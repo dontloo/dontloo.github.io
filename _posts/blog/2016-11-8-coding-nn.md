@@ -8,20 +8,21 @@ tags: []
 date: 2016-11-8
 ---
 
-### Existing Neural Network Libraries
-There're many brilliant open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface or protocol (so-called define and run, e.g. caffe and tensorflow frontend), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it becomes a common need for people in the field to experiment new ideas beyond those encapsulations, often I found that the very interface I need is just the source code, and the very protocol I need is just the programming language.
+### Encapsulated Neural Network Libraries
+There're many great open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface or protocol (so-called define and run, like caffe and tensorflow frontend), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it becomes a common need for people in the field to experiment new ideas beyond those encapsulations, often I found that the very interface or protocol I need is just the programming language itself.
 
-[Pytorch](http://pytorch.org/) does a great job on that, before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes. It mostly talks about feedforward neural networks (FFNNs), but the idea should be applicable to recurrent networks as well.
+[Pytorch](http://pytorch.org/) does a great job on that, it doesn't make unnecessary assumptions (e.g. input shape of a layer can be inferred at compile/run time) and is convenient for code-level extensions. Before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes.
 
-### Same Network for Training and Test?
-Is the same network used for both training and test? If it were in the last century, the answer might be yes. But no. 
+### Train and Test, Model and Parameter
+Is the same network used for both training and test? If it were in the last century, the answer probably was yes. But no. 
 For instance, recently developed layers such as batch normalization behave differently at training and test time, and sometimes people only need some intermediate result as feature representations for other tasks at test time. 
 Here're a few examples of different architectures in training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [FractalNet: Ultra-Deep Neural Networks without Residuals](https://arxiv.org/abs/1605.07648), [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114).
 
 So network architectures can be different, computations can be different,
 the only thing that connects training and test is (a subset of) the parameters. 
-In terms of coding, we totally should decouple the training and test networks as two different functions,
-that is to say, the training specifies how to search for the parameters, the test specifies how to use the parameters.
+In terms of coding, we totally should separate the training and test networks as two different models,
+the training specifies how to search for the parameters, the test specifies how to use the parameters.
+In practice I found such decoupling of training and test, models and parameters useful for other machine learning applications as well.
 
 ### Implementing a Neural Network Library
 The neural network library I wrote follows the following key points, hopefully it would help sorting out the related concepts in terms of implementation.  
