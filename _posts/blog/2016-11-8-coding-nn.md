@@ -9,9 +9,9 @@ date: 2016-11-8
 ---
 
 ### Encapsulated Neural Network Libraries
-There're many great open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface or protocol (so-called define and run, like caffe and tensorflow frontend), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it becomes a common need for people in the field to experiment new ideas beyond those encapsulations, often I found that the very interface or protocol I need is just the programming language itself.
+There're many great open source libraries for neural networks and deep learning. Some of them try to wrap every function they provide into an uniform interface or protocol (so-called define and run, e.g. caffe and tensorflow frontend), such well encapsulated libraries might be easy to use but difficult to change. As the rapid development of deep learning, it becomes a common need for people in the field to experiment new ideas beyond those encapsulations, often I found that the very interface or protocol I need is just the programming language itself.
 
-[Pytorch](http://pytorch.org/) does a great job on that, it doesn't make unnecessary assumptions (e.g. input shape of a layer can be inferred at compile/run time) and is convenient for code-level extensions. Before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes.
+[Pytorch](http://pytorch.org/) does a great job on that, it doesn't make unnecessary assumptions (like it's not too late to infer the input shape of a layer at compile/run time) and is convenient for code-level extensions. Before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes.
 
 ### Train and Test, Models and Parameters
 Is the same network used for both training and test? If it were in the last century, the answer probably was yes. But no. 
