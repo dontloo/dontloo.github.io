@@ -14,7 +14,7 @@ modified: 2014-10-08
 - *Optimization:* EM, Nesterov's Accelerated Gradient, AdaGrad/ADAM
 - *Clustering:* Mean-Shift, K-Means, DBSCAN
 - *Sampling:* Rejection, Importance, Gibbs, Metropolis–Hastings
-- *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY
+- *Nearest Neighbor Search:* Navigable Small Worlds, ANNOY, Product Quantization
 - *Others:* Joint Bayesian Verification, A\* Search, PageRank
 
 **Programming stuff I've dealt with** (ones that I'm still familiar with are marked in bold)  
