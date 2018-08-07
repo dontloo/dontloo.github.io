@@ -13,7 +13,7 @@ There're many great open source libraries for neural networks and deep learning.
 
 [Pytorch](http://pytorch.org/) does a great job on that, it doesn't make unnecessary assumptions (e.g. input shape of a layer can be inferred at compile/run time) and is convenient for code-level extensions. Before I found Pytorch I wrote a library myself for the purpose of *going from idea to result with the least possible delay*, followings are some implementation notes.
 
-### Train and Test, Model and Parameter
+### Train and Test, Models and Parameters
 Is the same network used for both training and test? If it were in the last century, the answer probably was yes. But no. 
 For instance, recently developed layers such as batch normalization behave differently at training and test time, and sometimes people only need some intermediate result as feature representations for other tasks at test time. 
 Here're a few examples of different architectures in training and test, [Deep Learning Face Attributes in the Wild](http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Liu_Deep_Learning_Face_ICCV_2015_paper.pdf), [FractalNet: Ultra-Deep Neural Networks without Residuals](https://arxiv.org/abs/1605.07648), [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114).
