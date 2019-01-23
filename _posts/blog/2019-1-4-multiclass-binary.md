@@ -7,6 +7,8 @@ excerpt:
 tags: []
 date: 2019-1-4
 ---
+Placeholder  
+
 Should we always use hierarchical softmax instead of softmax?
 
 Pros
